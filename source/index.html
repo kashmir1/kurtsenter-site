@@ -9,7 +9,9 @@
   <meta name="Keywords" content="Онлайн сервис проверки запрета на выезд из РФ">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -19,286 +21,124 @@
 <!--Хедер-->
 <body>
 
-   <header class="header">
-     <div class="container">
-       <div class="header__wrapper">
-         <div class="header__logo-wrapper">
-           <a href="index.html"><img class="header__logo" src="img/logo.svg" alt=""></a>
-           <span class="header__slogan">Онлайн сервис проверки
-запрета на выезд из РФ</span>
-         </div>
-         <nav class="nav">
-           <ul class="nav__list">
-             <li class="nav__item">
-               <a class="nav__link nav__link--active" href="">Проверка запрета на выезд</a>
-             </li>
-             <li class="nav__item">
-               <a class="nav__link" href="about.html">О компании</a>
-             </li>
-             <li class="nav__item">
-               <a class="nav__link" href="">Тех. поддержка</a>
-             </li>
-           </ul>
-         </nav>
-         <nav class="mobile-nav">
-           <div class="header__logo-wrapper">
-             <a href="index.html"><img class="header__logo" src="img/logo.svg" alt=""></a>
-             <span class="header__slogan">Онлайн сервис проверки
-запрета на выезд из РФ</span>
-           </div>
-           <button class="menu-close" type="button"></button>
-           <ul class="nav__list">
-             <li class="nav__item">
-               <a class="nav__link nav__link--active" href="">Проверка запрета на выезд</a>
-             </li>
-             <li class="nav__item">
-               <a class="nav__link" href="about.html">О компании</a>
-             </li>
-             <li class="nav__item">
-               <a class="nav__link" href="">Тех. поддержка</a>
-             </li>
-           </ul>
+<header class="header">
+  <div class="container-fluid header-navbar">
+    <div class="header-container">
+      <div class="header-wrapper">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+        <a href="" class="open-menu hamb-icon"></a>
+      </div>
+      <nav class="main-nav">
+        <div class="nav-list d-none">
+          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Выбрать курорт +</a>
+            <ul class="subnav d-none">
+              <li class="subnav-item">
+                <a href="">
+                  <span class="text-danger">Кавказские Минеральные Воды</span></a>
+              </li>
+              <li>
+                <a href="">
+                  Кисловодск</a>
+              </li>
+              <li>
+                <a href="">
+                  Ессентуки</a>
+              </li>
+              <li>
+                <a href="">
+                  Пятигорск</a>
+              </li>
+              <li>
+                <a href="">
+                  Железноводск</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Акции +</a>
+            <ul class="subnav d-none">
+              <li class="subnav-item">
+                <a href="">
+                  <span class="text-danger">Акции</span></a>
+              </li>
+              <li>
+                <a href="">
+                  Кисловодск</a>
+              </li>
+              <li>
+                <a href="">
+                  Ессентуки</a>
+              </li>
+              <li>
+                <a href="">
+                  Пятигорск</a>
+              </li>
+              <li>
+                <a href="">
+                  Железноводск</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item"><a class="nav-link" href="">Подобрать отель по услугам</a></div>
+          <div class="nav-item"><a class="nav-link" href="">Оплатить</a></div>
 
-           <div class="mobile-nav-contact">
-             <span>Телефон тех. поддержки</span>
-             <a class="mobile-contact" href="tel:+78004003030">8 800 400 30 30</a>
-             <span class="mobile-schedule">с 09:00 до 18:00, выходные: сб, вс</span>
-             <span>Электронная почта:</span>
-             <a class="mobile-contact" href="mailto:info@zapretviezda.ru">info@zapretviezda.ru</a>
-           </div>
-         </nav>
-         <button type="button" class="toggler">
-         </button>
-       </div>
-
-
-     </div>
-
-
- </header>
-
-<main class="main-page">
-  <div class="container">
-    <ul class="breadcrumb">
-      <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="">Главная</a>
-      </li>
-
-      <li class="breadcrumb__item">
-        <a class="breadcrumb__link breadcrumb__link--active">Проверка запрета на выезд</a>
-      </li>
-    </ul>
-    <section class="check-form">
-      <h1>Проверить запрет на выезд за границу онлайн</h1>
-      <p class="check-form__desc">
-        Для того, чтобы проверить есть ли запрет на выезд за границу, требуется отправить запрос и указать свои данные в форме ниже. Онлайн сервис проведет проверку по базам ФССП, ФТС, ФНС
-      </p>
-
-        <div class="check-form__form">
-
-            <form class="check-form__form-block">
-              <div class="check-form__container-first">
-                <span class="check-form__step check-form__step--1">Шаг 1/3</span>
-                <div class="check-form__input-wrapper">
-                  <div class="check-form__field-wrapper">
-                    <label class="check-form__label" for="fio">Укажите ваше ФИО:<span class="check-form__required req">(Обязательное поле)</span></label>
-                    <input class="check-form__input field" id="fio" type="text" placeholder="Иванов Иван Иванович">
-                  </div>
-
-                  <div class="check-form__field-wrapper">
-                    <label class="check-form__label" for="region">Выберите регион:<span class="check-form__required req">(Обязательное поле)</span></label>
-
-                    <div class="check-form__field-wrapper">
-                      <div class="custom-select form__select-type">
-                        <select class="field" id="region">
-                          <option value="" selected>Регион</option>
-                          <option value="Алтайский край">Алтайский край</option>
-                          <option value="Московская обл">Московская обл</option>
-                          <option value="Приморский край">Приморский край</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-
-                </div>
-                <div class="check-form__input-wrapper">
-                  <div class="check-form__field-wrapper">
-                    <label class="check-form__label" for="date">Укажите дату рождения:<span class="check-form__required req">(Обязательное поле)</span></label>
-                    <input class="check-form__input field" type="date" id="date" min="1910-01-01" max="2050-12-31">
-                  </div>
-
-                  <div class="check-form__field-wrapper">
-                    <label class="check-form__label" for="passport">Серия номер паспорта:<span class="check-form__required req">(Обязательное поле)</span></label>
-                    <input class="check-form__input field" id="passport" minlength="12" maxlength="12" type="text" placeholder="Введите серию и номер паспорта">
-                  </div>
-                </div>
-                <div class="check-form__button-wrapper">
-                  <p class="check-form__rules">
-                    Нажимая на кнопку, вы соглашаетесь с правилами пользования сайта
-                    и <a class="check-form__rules-link" href="">обработкой персональных данных</a>
-                  </p>
-                  <button type="button" class="check-form__button">Следующий шаг 2/3</button>
-                </div>
-              </div>
-              <div style="display: none" class="check-form__container-last">
-                <span class="check-form__step check-form__step--2">Шаг 2/3</span>
-                <div class="check-form__last-step-wrapper">
-                  <div class="check-form__data">
-                    <span class="check-form__data-title">
-                      Данные о заявителе:
-                    </span>
-                    <div class="check-form__data-item">
-                      <span class="check-form__data-type">ФИО:</span>
-                      <span id="fio-value" class="check-form__data-value"></span>
-                    </div>
-                    <div class="check-form__data-item">
-                      <span class="check-form__data-type">Дата рождения:</span>
-                      <span id="birth-date" class="check-form__data-value"></span>
-                    </div>
-                    <div class="check-form__data-item">
-                      <span class="check-form__data-type">Регион:</span>
-                      <span id="region-value" class="check-form__data-value"></span>
-                    </div>
-                    <div class="check-form__data-item check-form__data-item--last">
-                      <span class="check-form__data-type">Серия номер паспорта:</span>
-                      <span id="passport-value" class="check-form__data-value"></span>
-                    </div>
-                  </div>
-                  <div class="check-form__contact">
-                    <div class="check-form__field-wrapper">
-                      <label class="check-form__label" for="email">Введите E-mail для получения отчета:</label>
-                      <input class="check-form__input" id="email" type="email" placeholder="Ваш Email">
-                    </div>
-                    <div class="check-form__field-wrapper check-form__field-wrapper--mt">
-                      <label class="check-form__label" for="phone">Введите телефон:</label>
-                      <input class="check-form__input" id="phone" type="text" placeholder="+7 ( ____ ) ___ - __ - __">
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="check-form__button-wrapper check-form__button-wrapper--last">
-                  <a class="check-form__back" href="">Вернуться назад</a>
-                  <div class="check-form__total-wrapper">
-                    <p class="check-form__total">Стоимость запроса,
-                      согласно тарифам: 190 ₽</p>
-                    <button class="check-form__button">Следующий шаг 3/3</button>
-                  </div>
-
-                </div>
-              </div>
-
-            </form>
-
-
-
-          <div class="check-form__law">
-            <p class="check-form__law-desc">Проверка запреты выезда за границу производится, так как судебный пристав-исполнитель в соответствии со ст. 67 ФЗ от 02.10.2007 № 229-ФЗ «Об исполнительном производстве» вправе по заявлению взыскателя или собственной инициативе вынести постановление о временном ограничении на выезд должника из Российской Федерации.</p>
+          <div class="header-contact">
+            <a class="header-contact-link header-phone" href="tel:+78043337320">8(804)333-73-20</a>
+            <a class="header-contact-link header-wa" href="https://api.whatsapp.com/send?phone=79188879696">8(918)887-96-96</a>
           </div>
 
+          <div class="header-user-links">
+            <a class="header-user-link" href=""><svg class="svg_icon">
+              <use xlink:href="img/svgsprite.svg#svgicon-user"></use>
+            </svg></a>
+            <a class="header-user-link" href="">
+              <svg class="svg_icon">
+                <use xlink:href="img/svgsprite.svg#svgicon-search"></use>
+              </svg>
+            </a>
+            <a class="header-user-link" href="">
+              <svg class="svg_icon">
+                <use xlink:href="img/svgsprite.svg#svgicon-heart"></use>
+              </svg>
+            </a>
+          </div>
         </div>
 
+      </nav>
 
+    </div>
 
-
-    </section>
-
-    <section class="rules">
-      <h2>Правила выезда за границу граждан РФ 2020</h2>
-      <p class="check-form__desc">
-        Согласно последнему постановлению, в связи с действующей непростой санитарно-гигиенической ситуацией, выезд за границу разрешен только следующим категориям граждан Российской Федерации при условии соблюдения приведенных правил:
-      </p>
-      <ul class="rules__list">
-        <li class="rules__item">
-          <p class="rules__desc">
-            <b>Выезжающие для лечения.</b> Обязательно наличие документа, выданного медицинской организацией (в которую направляется пациент), для подтверждения необходимости лечения с указанием длительности и дат лечения. Помимо этого, в обязательном порядке предоставляются документы, выданные Министерством здравоохранения РФ.
-          </p>
-        </li>
-        <li class="rules__item">
-          <p class="rules__desc">
-            <b>Совершающие однократный выезд для совершения ухода за болеющими опекунами, родственниками или попечителями.</b> Обязательно наличие официального документа для подтверждения текущего состояния больного и его необходимости в надлежащем уходе. Помимо этого, обязательно предоставляется документ для подтверждения родства.
-          </p>
-        </li>
-        <li class="rules__item">
-          <p class="rules__desc">
-            <b>Работающие за границей.</b> В этом случае обязательно предоставляется трудовой контракт с зарубежной компанией, разрешение на право въезда на территорию принимающей страны, разрешение на право осуществления профессиональной деятельности в принимающей стране.          </p>
-        </li>
-        <li class="rules__item">
-          <p class="rules__desc">
-            <b>Обучающиеся за границей.</b> Обязательно наличие документа для подтверждения обучения, которое может быть выдано отечественным (в случае направления ученика) или зарубежным объектом образования. </p>
-        </li>
-        <li class="rules__item">
-          <p class="rules__desc">
-            <b>Имеющие гражданство других стран или право проживания за границей.</b>
-          </p>
-        </li>
-        <li class="rules__item">
-          <p class="rules__desc">
-            <b>Члены семьи граждан иностранных государств.</b>
-          </p>
-        </li>
-
-      </ul>
-    </section>
-    <section class="check">
-      <h2>Как проверить ограничение на выезд за границу</h2>
-      <p class="check-form__desc">Есть два способа проверить ограничение на выезд за границу:</p>
-      <ol class="check__list">
-        <li class="check__item">
-          Зайти на сайт «Госуслуги» и проверить, являетесь ли вы участником исполнительного производства. Запрет может быть применен только в том случае, если имеется исполнительное производство. Если система показывает, что за вами числится данный процесс, необходимо нажать по вкладке «Получить информацию» и открыть доступ к полной картине. После этого в течение 5 рабочих дней вы получите ответ от портала с полным описанием и перечислением всех действий исполнительного производства, какие запросы были выполнены, какие постановления приняты. Ограничение имеется в том случае, когда вы увидите строчку с постановлением об ограничении на выезд за пределы РФ.
-        </li>
-        <li class="check__item">
-          Обратиться к судебному приставу по месту жительства. Это наиболее достоверный метод. Но здесь нельзя исключать
-          вариант, что пристав проверит имеющиеся задолженности и наложит запрет, которого ранее не было.        </li>
-      </ol>
-    </section>
-    <section class="faq">
-      <h2>Часто задаваемые вопросы граждан</h2>
-      <div class="faq__question">
-        <h3 class="faq__question-title">Какие документы нужны для выезда за границу</h3>
-        <p class="faq__desc">
-          Если выезд в иностранное государство осуществляется по приглашению родственников, то при пересечении границы необходимо будет предъявить документы, подтверждающие родство: свидетельство, подтверждающее заключение брака, свидетельство, выданное для подтверждения факта рождения ребенка и т.д. При себе нужно иметь не только ксерокопии этих документов, но также и их оригиналы.
-        </p>
-      </div>
-      <div class="faq__question">
-        <h3 class="faq__question-title">Где оформить страховку для выезда за границу</h3>
-        <p class="faq__desc">
-          Оформить страховку для выезда за границу можно в любой страховой компании. Страховка для выезда за границу, прежде всего, подразумевает медицинское страхование людей, которые пребывают на территории других стран. Страховой полис в данном случае покрывает все риски, связанные с ухудшением здоровья застрахованного гражданина в ходе пребывания в зарубежном государстве. Это могут быть как несерьезные заболевания, простуды или пищевые отравления, так и экстренные состояния, требующие срочного оперативного вмешательства. Полис может покрывать потерю багажа, невыезд по веским причинам и прочие риски.        </p>
-      </div>
-      <div class="faq__question">
-        <h3 class="faq__question-title">Однократный выезд за границу что это</h3>
-        <p class="faq__desc">
-          Однократный выезд за границу - это основание для разрешения на осуществление выезда, которое будет проверяться каждый раз. То есть каждый раз необходимо будет собирать и предоставлять соответствующие документы. Как правило, данный термин используется при оформлении визы. В 2020 году данный термин чаще употребляется для пересечения границы во время пандемии.        </p>
-      </div>
-      <div class="faq__question">
-        <h3 class="faq__question-title">Кому запрещен выезд за границу</h3>
-        <div class="faq__desc">
-          <p>
-            Согласно действующему законодательству РФ следующие категории граждан являются невыездными:
-          </p>
-          <ul class="faq__list">
-            <li class="faq__item">
-              — Сотрудники ФСБ
-            </li>
-            <li class="faq__item">
-              — Лица, имеющие доступ к государственной тайне
-            </li>
-            <li class="faq__item">            — Граждане, которые указали заведомо ложные данные при сборе документов для выезда
-
-            </li>
-            <li class="faq__item">            — Обвиняемые и подозреваемые в совершении преступлений</li>
-            <li class="faq__item"> — Осужденные за совершение преступлений. Уклоняющиеся от обязательств.</li>
-          </ul>
-        </div>
-
-
-      </div>
-    </section>
 
   </div>
+</header>
+
+
+<main class="main-page">
+  <section class="promo">
+    <div class="container">
+      <div class="promo-content">
+        <h1 class="promo-title">
+          Санаторий Виктория
+          Кисловодск
+        </h1>
+        <span class="promo-desc">Путевки с гарантией лучшей цены</span>
+        <a class="button-main promo-button" href="">Подобрать номер</a>
+      </div>
+
+    </div>
+
+  </section>
+  <div class="container">
+    <section class="calc-form">
+      <div class="calc-form-content">
+        <h2 class="calc-form-title">Рассчитать стоимость отдыха</h2>
+        <label for="arrival" class="calc-form-select-title calc-form-select-title--date">
+          Дата заезда
+        </label>
+        <input id="arrival" class="calc-form-input" type="text">
+      </div>
+    </section>
+  </div>
+
   <p>Date: <input type="text" id="datepicker"></p>
 
 
@@ -390,9 +230,31 @@
    </script>
 
    <script>
-     $( function() {
-       $( "#datepicker" ).datepicker();
-     } );
+
+
+     $.datepicker.regional['ru'] = {
+       closeText: 'Закрыть',
+       prevText: 'Предыдущий',
+       nextText: 'Следующий',
+       currentText: 'Сегодня',
+       monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+       monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+       dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+       dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+       dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+       weekHeader: 'Не',
+       dateFormat: 'dd.mm.yy',
+       firstDay: 1,
+       isRTL: false,
+       showMonthAfterYear: false,
+       yearSuffix: ''
+     };
+     $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+     $(function() {
+       $( "#arrival" ).datepicker({ dateFormat: 'd-M' }).val();
+     });
+
    </script>
 </body>
 </html>

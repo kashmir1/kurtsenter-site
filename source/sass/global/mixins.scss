@@ -1,19 +1,8 @@
-//Шрифтовые стили
-@mixin content-font {
-  color: #444444;
-  font-size: 14px;
-  font-family: "Arial", sans-serif;
-  font-weight: normal;
-  line-height: 1.29;
+//Миксины для шрифтов
+@mixin nunito-font {
+  font-family: 'Nunito', Arial, sans-serif;
 }
 
-@mixin liststyle-none {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-@mixin main-font {
-  font-family: "Oswald", "Arial", sans-serif;
+@mixin commissioner-font {
+  font-family: 'Commissioner', Verdana, sans-serif;
 }

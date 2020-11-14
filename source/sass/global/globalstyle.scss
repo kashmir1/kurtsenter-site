@@ -1,3 +1,9 @@
+$white: #ffffff;
+$blue: #12b1ee;
+$dark-blue: #0a90c4;
+$deep-blue: #283a5e;
+$gray-blue: #687693;
+
 body {
   background-color: #ffffff;
   box-sizing: border-box;
@@ -50,8 +56,27 @@ h4 {
   color: #333333;
 }
 
+
 .gray-container {
   @media (max-width: $mobile-width) {
     background-color: #F5F5F5;
+  }
+}
+
+.button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  background: $blue;
+  color: $white;
+  cursor: pointer;
+  font-size: 22px;
+
+  &:hover {
+    text-decoration: none;
+    background-color: $dark-blue;
+    color: $white;
   }
 }
