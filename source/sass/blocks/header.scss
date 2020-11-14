@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  background-color: #019867;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__slogan {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: normal;
+  width: 162px;
+  display: inline-block;
+  margin-left: 13px;
+}
+
