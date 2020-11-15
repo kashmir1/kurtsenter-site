@@ -5820,7 +5820,7 @@ body {
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Golos", "Arial", sans-serif; }
+  font-family: 'Nunito', Arial, sans-serif; }
 
 .container {
   max-width: 1140px;
@@ -5841,14 +5841,9 @@ h1 {
       font-weight: 500; } }
 
 h2 {
-  font-size: 22px;
-  color: #333333;
-  font-weight: normal;
-  line-height: 40px; }
-  @media (max-width: 979px) {
-    h2 {
-      font-size: 20px;
-      line-height: 24px; } }
+  font-family: 'Commissioner', Verdana, sans-serif;
+  font-size: 50px;
+  color: #283a5e; }
 
 h3 {
   font-size: 18px;
@@ -5884,6 +5879,14 @@ h4 {
     text-decoration: none;
     background-color: #0a90c4;
     color: #ffffff; }
+
+.img-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px; }
+  .img-container img {
+    width: 100%; }
 
 .visually-hidden {
   position: absolute;
@@ -7203,5 +7206,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 2px solid #dddddd; }
+
+.calc-form-note {
+  color: #12b1ee;
+  font-size: 22px;
+  text-align: center; }
+
+.rooms-title {
+  text-align: center; }
+
+.rooms-item {
+  width: 100%;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(180, 179, 179, 0.37);
+          box-shadow: 0px 0px 16px 0px rgba(180, 179, 179, 0.37);
+  padding-bottom: 20px; }
+
+.rooms-type {
+  font-size: 18px;
+  color: #000000;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.rooms-price {
+  font-size: 22px;
+  color: #000000;
+  padding-left: 10px; }
+
+.rooms-price-note {
+  font-size: 12px;
+  color: #12b1ee;
+  margin-left: 20px; }
 
 /*# sourceMappingURL=style.css.map */
