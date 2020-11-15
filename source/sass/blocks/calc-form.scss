@@ -38,6 +38,22 @@
   }
 }
 
+
+.calc-form-select-title--user {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    background-image: url("../img/people.svg");
+    z-index: 1000;
+  }
+}
+
+
 .calc-form-input {
   border: 0;
   height: 50px;
@@ -53,3 +69,15 @@
     font-weight: normal;
   }
 }
+
+.calc-form-input--number {
+  background: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #dddddd;
+}
+
+

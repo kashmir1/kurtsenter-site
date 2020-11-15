@@ -7154,6 +7154,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url("../img/date.svg");
     z-index: 1000; }
 
+.calc-form-select-title--user {
+  position: relative; }
+  .calc-form-select-title--user::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    background-image: url("../img/people.svg");
+    z-index: 1000; }
+
 .calc-form-input {
   border: 0;
   height: 50px;
@@ -7178,5 +7190,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .calc-form-input::placeholder {
     font-size: 30px;
     font-weight: normal; }
+
+.calc-form-input--number {
+  background: none; }
+
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 2px solid #dddddd; }
 
 /*# sourceMappingURL=style.css.map */
