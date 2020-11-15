@@ -7138,9 +7138,45 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .calc-form-select-title {
   text-transform: uppercase;
   font-size: 20px;
-  color: #687693; }
+  position: relative;
+  color: #687693;
+  padding-left: 30px; }
+
+.calc-form-select-title--date {
+  position: relative; }
+  .calc-form-select-title--date::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    background-image: url("../img/date.svg");
+    z-index: 1000; }
 
 .calc-form-input {
-  border: 0; }
+  border: 0;
+  height: 50px;
+  font-size: 40px;
+  color: #283a5e;
+  font-weight: bold;
+  background: url("../img/drop.svg") no-repeat;
+  background-position: 99%;
+  background-size: 17px; }
+  .calc-form-input::-webkit-input-placeholder {
+    font-size: 30px;
+    font-weight: normal; }
+  .calc-form-input::-moz-placeholder {
+    font-size: 30px;
+    font-weight: normal; }
+  .calc-form-input:-ms-input-placeholder {
+    font-size: 30px;
+    font-weight: normal; }
+  .calc-form-input::-ms-input-placeholder {
+    font-size: 30px;
+    font-weight: normal; }
+  .calc-form-input::placeholder {
+    font-size: 30px;
+    font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */

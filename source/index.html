@@ -131,15 +131,18 @@
     <section class="calc-form">
       <div class="calc-form-content">
         <h2 class="calc-form-title">Рассчитать стоимость отдыха</h2>
-        <label for="arrival" class="calc-form-select-title calc-form-select-title--date">
-          Дата заезда
-        </label>
-        <input id="arrival" class="calc-form-input" type="text">
+        <div class="d-flex flex-column mt-4">
+          <label for="arrival" class="calc-form-select-title calc-form-select-title--date">
+            Дата заезда
+          </label>
+          <input id="arrival" class="calc-form-input" type="text" placeholder="Укажите дату">
+        </div>
+
+
       </div>
     </section>
   </div>
 
-  <p>Date: <input type="text" id="datepicker"></p>
 
 
 </main>
@@ -216,18 +219,18 @@
   </div>
 </footer>
 
-   <script src="js/jquery.inputmask.js"></script>
+<!--   <script src="js/jquery.inputmask.js"></script>-->
    <script src="js/menu.js"></script>
-<script src="js/select.js"></script>
-<script src="js/faq.js"></script>
-   <script src="js/form-listing.js"></script>
-   <script>
-     $(":input").inputmask();
-     $("#phone").inputmask({"mask": "+7(999) 999-99-99"});
-     $("#passport").inputmask(["99 99 999999"],
-       { "clearIncomplete": true, "placeholder": " " }).mask(".#passport");
+<!--<script src="js/select.js"></script>-->
+<!--<script src="js/faq.js"></script>-->
+<!--   <script src="js/form-listing.js"></script>-->
+<!--   <script>-->
+<!--     $(":input").inputmask();-->
+<!--     $("#phone").inputmask({"mask": "+7(999) 999-99-99"});-->
+<!--     $("#passport").inputmask(["99 99 999999"],-->
+<!--       { "clearIncomplete": true, "placeholder": " " }).mask(".#passport");-->
 
-   </script>
+<!--   </script>-->
 
    <script>
 
