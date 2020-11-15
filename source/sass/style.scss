@@ -29,6 +29,8 @@ $mobile-width: 979px;
 @import "global/font.scss";
 @import "global/variables";
 @import "global/mixins.scss";
+@import "global/flexslider.css";
+@import "global/flexslider-rtl.css";
 
 @import "blocks/header";
 @import "blocks/nav";

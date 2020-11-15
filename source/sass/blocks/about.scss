@@ -1,11 +1,18 @@
 .about {
-  margin-bottom: 100px;
-}
+  //.flex-active-slide {
+  //  width: 65px;
+  //  height: 65px;
+  //}
 
-.about__content, .about__link {
-  color: #333333;
-  font-size: 14px;
-  max-width: 900px;
-  line-height: 20px;
 }
-
+#carousel {
+  //.flex-viewport {
+  //  height: 100px;
+  //}
+    li {
+      height: 80px;
+      img {
+        width: 100%;
+      }
+    }
+}

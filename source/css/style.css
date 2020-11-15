@@ -1,3 +1,5 @@
+@import url(global/flexslider.css);
+@import url(global/flexslider-rtl.css);
 *,
 *::before,
 *::after {
@@ -7079,14 +7081,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer__lock {
   margin-right: 6px; }
 
-.about {
-  margin-bottom: 100px; }
-
-.about__content, .about__link {
-  color: #333333;
-  font-size: 14px;
-  max-width: 900px;
-  line-height: 20px; }
+#carousel li {
+  height: 80px; }
+  #carousel li img {
+    width: 100%; }
 
 .promo {
   position: relative;
