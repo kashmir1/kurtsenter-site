@@ -5890,6 +5890,40 @@ h4 {
   .img-container img {
     width: 100%; }
 
+.call-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #12b1ee;
+  color: #ffffff;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 300px;
+  height: 65px; }
+  .call-me:hover {
+    color: #ffffff;
+    text-decoration: none; }
+  .call-me::before {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: #7ac142;
+    right: 0; }
+  .call-me::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    background-image: url("../img/right-arrow-call.svg");
+    right: 25px;
+    background-size: 150%; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -7109,6 +7143,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #slider .flex-direction-nav {
   margin-top: 10px;
   max-width: 625px; }
+
+.about-content {
+  font-size: 14px;
+  color: #687693;
+  line-height: 22px; }
+
+.about-h3 {
+  font-family: 'Commissioner', Verdana, sans-serif;
+  font-size: 25px;
+  color: #404e6c; }
+
+.about-call-me {
+  width: 300px;
+  height: 65px;
+  border: 1px solid #516388;
+  padding-left: 20px;
+  font-size: 18px; }
+  .about-call-me::-webkit-input-placeholder {
+    color: #7e8fb0; }
+  .about-call-me::-moz-placeholder {
+    color: #7e8fb0; }
+  .about-call-me:-ms-input-placeholder {
+    color: #7e8fb0; }
+  .about-call-me::-ms-input-placeholder {
+    color: #7e8fb0; }
+  .about-call-me::placeholder {
+    color: #7e8fb0; }
 
 .promo {
   position: relative;
