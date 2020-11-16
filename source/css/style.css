@@ -7082,9 +7082,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-right: 6px; }
 
 #carousel li {
-  height: 80px; }
+  height: 60px;
+  margin-bottom: 20px; }
   #carousel li img {
-    width: 100%; }
+    width: 60px;
+    border: 1px solid #0a90c4; }
+
+#carousel .flex-direction-nav {
+  display: none; }
+
+#carousel .slides {
+  margin: 0;
+  max-width: 625px; }
+
+#slider .flex-direction-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+  #slider .flex-direction-nav .flex-nav-prev {
+    display: none; }
+  #slider .flex-direction-nav .flex-nav-next {
+    display: none; }
+
+#slider .flex-direction-nav {
+  margin-top: 10px;
+  max-width: 625px; }
 
 .promo {
   position: relative;

@@ -344,8 +344,10 @@
       animationLoop: false,
       slideshow: false,
       itemWidth: 60,
-      itemMargin: 5,
-      asNavFor: '#slider'
+      itemMargin: 20,
+      asNavFor: '#slider',
+      prevText: "",           //String: Set the text for the "previous" directionNav item
+      nextText: "",
     });
 
     $('#slider').flexslider({
@@ -353,7 +355,9 @@
       controlNav: false,
       animationLoop: false,
       slideshow: false,
-      sync: "#carousel"
+      sync: "#carousel",
+      prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+      nextText: "Next",
     });
   });
 </script>
