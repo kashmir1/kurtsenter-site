@@ -1,0 +1,26 @@
+.health {
+  .img-container {
+    width: 78px;
+    height: 78px;
+  }
+}
+
+.health__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 295px;
+  margin-bottom: 30px;
+}
+
+.health__title {
+  color: #12b1ee;
+  font-size: 22px;
+}
+
+.health__link {
+  text-align: center;
+  color: #687693;
+  text-decoration: underline;
+  font-size: 18px;
+}
