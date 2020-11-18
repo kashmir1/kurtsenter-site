@@ -1,0 +1,29 @@
+.services-list__title {
+  position: relative;
+  font-size: 35px;
+  @include commissioner-font;
+  color: #283a5e;
+}
+
+.services-list__list {
+
+}
+
+.services-list__item {
+  position: relative;
+  color: #283a5e;
+  font-size: 19px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    left: 0;
+    top: 8px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
