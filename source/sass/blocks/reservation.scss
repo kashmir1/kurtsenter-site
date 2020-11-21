@@ -1,0 +1,15 @@
+.reservation {
+  background-color: #12b1ee;
+  padding: 40px 35px;
+}
+
+.reservation__title {
+  color: #ffffff;
+  font-size: 40px;
+  @include commissioner-font;
+}
+
+.reservation__form {
+  background-color: white;
+  padding: 40px 20px 20px;
+}

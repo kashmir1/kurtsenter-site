@@ -7498,4 +7498,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-image: url("../img/phone.svg");
   background-repeat: no-repeat; }
 
+.reservation {
+  background-color: #12b1ee;
+  padding: 40px 35px; }
+
+.reservation__title {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Commissioner', Verdana, sans-serif; }
+
+.reservation__form {
+  background-color: white;
+  padding: 40px 20px 20px; }
+
 /*# sourceMappingURL=style.css.map */
