@@ -7594,4 +7594,63 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url("../img/mail.svg");
     background-repeat: no-repeat; }
 
+.reviews__title {
+  font-family: 'Commissioner', Verdana, sans-serif;
+  color: #242f6c;
+  font-size: 30px; }
+
+.reviews__review {
+  border: 1px solid #12b1ee;
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(18, 177, 238, 0.31);
+          box-shadow: 0px 5px 13px 0px rgba(18, 177, 238, 0.31);
+  padding: 25px 30px;
+  min-height: 240px;
+  margin-bottom: 30px; }
+
+.reviews__title {
+  color: #242f6c;
+  font-size: 24px;
+  font-family: 'Commissioner', Verdana, sans-serif; }
+
+.reviews__value {
+  color: #03c787;
+  font-size: 24px;
+  font-family: 'Commissioner', Verdana, sans-serif;
+  margin-left: 20px; }
+
+.reviews__user-info {
+  font-size: 14px;
+  color: #888888; }
+
+.reviews__review-text {
+  color: #777777;
+  font-size: 18px; }
+
+.reviews__plus-minus {
+  color: #777777;
+  font-size: 14px;
+  padding-left: 30px; }
+
+.reviews__plus-minus--plus {
+  position: relative; }
+  .reviews__plus-minus--plus::before {
+    content: '+';
+    font-weight: bold;
+    color: #03c787;
+    position: absolute;
+    left: 0;
+    top: -9px;
+    font-size: 24px; }
+
+.reviews__plus-minus--minus {
+  position: relative; }
+  .reviews__plus-minus--minus::before {
+    content: '-';
+    font-weight: bold;
+    color: #cd0f2d;
+    position: absolute;
+    left: 0;
+    top: -9px;
+    font-size: 24px; }
+
 /*# sourceMappingURL=style.css.map */
