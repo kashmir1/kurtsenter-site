@@ -7409,4 +7409,93 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: block;
   color: #ffffff; }
 
+.location__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #000;
+  height: 180px;
+  padding-left: 50px;
+  padding-top: 40px;
+  margin-bottom: 10px; }
+  .location__adress::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    background-image: url("../img/location-bg.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: 0;
+    background-size: cover; }
+
+.location__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #000;
+  height: 147px;
+  padding-left: 50px;
+  padding-top: 40px;
+  margin-bottom: 10px; }
+  .location__phone::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 147px;
+    background-image: url("../img/phone-bg.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: 0;
+    background-size: cover; }
+
+.location__title {
+  position: relative;
+  color: #ffffff;
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 25px; }
+
+.location__content {
+  position: relative;
+  color: #ffffff;
+  font-size: 15px;
+  display: inline-block; }
+  .location__content:hover {
+    color: #ffffff; }
+
+.location__title--adress::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  left: -20px;
+  top: 2px;
+  height: 17px;
+  background-image: url("../img/location.svg");
+  background-repeat: no-repeat; }
+
+.location__title--phone::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  left: -20px;
+  top: 2px;
+  height: 17px;
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat; }
+
 /*# sourceMappingURL=style.css.map */
