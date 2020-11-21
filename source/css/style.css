@@ -7387,9 +7387,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-position: right;
   background-size: cover; }
 
+.consultation--call {
+  background-color: #5aab19;
+  background-image: url("../img/call-bg.jpg"); }
+
 .consultation__title {
   font-size: 25px;
   color: #ffffff;
   padding-top: 40px; }
+
+.consultation__phone {
+  font-family: 'Commissioner', Verdana, sans-serif;
+  color: #ffffff;
+  font-size: 48px; }
+  .consultation__phone:hover {
+    color: #ffffff; }
+
+.consultation__free-call {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

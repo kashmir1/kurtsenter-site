@@ -8,8 +8,32 @@
   background-size: cover;
 }
 
+.consultation--call {
+  background-color: #5aab19;
+  background-image: url("../img/call-bg.jpg");
+}
+
 .consultation__title {
   font-size: 25px;
   color: #ffffff;
   padding-top: 40px;
+}
+
+.consultation__phone {
+  @include commissioner-font;
+  color: #ffffff;
+  font-size: 48px;
+
+  &:hover {
+    color: #ffffff;
+
+  }
+}
+
+.consultation__free-call {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  color: #ffffff;
+
 }
