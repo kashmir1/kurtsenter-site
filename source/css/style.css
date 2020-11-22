@@ -7319,6 +7319,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .rooms-title {
       font-size: 50px; } }
 
+@media (min-width: 1440px) {
+  .rooms__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
 .rooms-item {
   width: 100%;
   border-radius: 4px;
@@ -7326,6 +7334,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           box-shadow: 0px 0px 16px 0px rgba(180, 179, 179, 0.37);
   padding-bottom: 20px;
   margin-bottom: 20px; }
+  @media (min-width: 1440px) {
+    .rooms-item {
+      width: 347px;
+      margin-right: 10px; }
+      .rooms-item:nth-of-type(4n) {
+        margin-right: 0; } }
 
 .rooms-type {
   font-size: 18px;
