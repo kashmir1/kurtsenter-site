@@ -4,13 +4,19 @@
   margin-top: -80px;
   z-index: 10000;
   position: relative;
-}
-
-.calc-form-content {
   padding: 20px;
 
   @include media-breakpoint-up(xl) {
     padding: 50px 60px;
+  }
+
+}
+
+.calc-form-content {
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -90,6 +96,15 @@
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid #dddddd;
+
+  @include media-breakpoint-up(xl) {
+    border-right: 2px solid #dddddd;
+    border-bottom: 0;
+    width: 220px;
+    margin-right: 45px;
+    padding-right: 40px;
+  }
+
 }
 
 .calc-form-note {

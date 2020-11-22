@@ -103,14 +103,12 @@
 
 .header-user-links {
   display: flex;
-  .svg_icon {
-    width: 26px;
-    height: 26px;
-    fill: #fff;
-  }
 }
 
+
+
 .header-user-link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,4 +119,49 @@
   margin-right: 15px;
 
 
+}
+
+.header__user-link--user {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 14px;
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+}
+
+.header__user-link--search {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 14px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+}
+
+.header__user-link--favorites {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 11px;
+    background-image: url("../img/favorites.svg");
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
 }

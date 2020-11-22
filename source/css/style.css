@@ -5846,7 +5846,7 @@ h2 {
   font-family: 'Commissioner', Verdana, sans-serif;
   font-size: 30px;
   color: #283a5e; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     h2 {
       font-size: 40px; } }
 
@@ -5907,7 +5907,7 @@ h4 {
   font-size: 16px;
   padding-right: 110px;
   height: 65px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .call-me {
       font-size: 20px; } }
   .call-me:hover {
@@ -5930,6 +5930,13 @@ h4 {
     background-image: url("../img/right-arrow-call.svg");
     right: 25px;
     background-size: 150%; }
+
+.container {
+  max-width: 1420px; }
+  @media (min-width: 1440px) {
+    .container {
+      padding: 0;
+      max-width: 1420px; } }
 
 .visually-hidden {
   position: absolute;
@@ -5976,14 +5983,14 @@ h4 {
 
 .header-container {
   padding: 30px 10px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .header-container {
       padding-left: 100px;
       padding-right: 100px; } }
 
 .logo {
   width: 180px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .logo {
       width: 260px; } }
 
@@ -6004,7 +6011,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .header-contact {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -6017,7 +6024,7 @@ h4 {
   font-size: 20px;
   color: #ffffff;
   padding-left: 50px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .header-contact-link {
       margin-right: 25px; } }
   .header-contact-link:hover {
@@ -6027,7 +6034,7 @@ h4 {
   position: relative;
   display: inline-block;
   margin-bottom: 20px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .header-phone {
       margin-bottom: 0; } }
   .header-phone::before {
@@ -6045,7 +6052,7 @@ h4 {
   position: relative;
   display: inline-block;
   margin-bottom: 20px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .header-wa {
       margin-bottom: 0; } }
   .header-wa::before {
@@ -6063,12 +6070,9 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .header-user-links .svg_icon {
-    width: 26px;
-    height: 26px;
-    fill: #fff; }
 
 .header-user-link {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6084,15 +6088,51 @@ h4 {
   background-color: rgba(236, 253, 245, 0.2);
   margin-right: 15px; }
 
+.header__user-link--user {
+  position: relative; }
+  .header__user-link--user::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 14px;
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    z-index: 1000; }
+
+.header__user-link--search {
+  position: relative; }
+  .header__user-link--search::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 14px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    z-index: 1000; }
+
+.header__user-link--favorites {
+  position: relative; }
+  .header__user-link--favorites::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 11px;
+    background-image: url("../img/favorites.svg");
+    background-repeat: no-repeat;
+    z-index: 1000; }
+
 .open-menu {
   position: relative; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .open-menu {
       display: none; } }
 
 .hamb-icon {
   position: relative; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .hamb-icon {
       display: none; } }
   .hamb-icon::before {
@@ -6108,7 +6148,7 @@ h4 {
 
 .close-icon {
   position: relative; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .close-icon {
       display: none; } }
   .close-icon::before {
@@ -6130,7 +6170,7 @@ h4 {
 
 .subnav {
   color: #ffffff; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .subnav {
       position: absolute;
       width: 300px;
@@ -6934,7 +6974,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #394968; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .footer__top {
       padding-top: 40px;
       padding-bottom: 40px; } }
@@ -7118,7 +7158,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #000;
   background-repeat: no-repeat;
   height: 650px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .promo {
       height: 950px; } }
   .promo::before {
@@ -7129,22 +7169,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url("../img/viktoriya.jpg");
     opacity: 0.4;
     z-index: 0; }
-    @media (min-width: 1420px) {
+    @media (min-width: 1440px) {
       .promo::before {
         height: 950px; } }
 
 .promo-content {
   position: relative;
   padding-top: 80px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .promo-content {
-      padding-top: 290px; } }
+      padding-top: 230px; } }
 
 .promo-title {
   font-size: 40px;
   font-family: 'Commissioner', Verdana, sans-serif;
   color: #ffffff; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .promo-title {
       font-size: 95px; } }
 
@@ -7165,19 +7205,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           box-shadow: 0px 0px 17px 4px rgba(85, 85, 85, 0.1);
   margin-top: -80px;
   z-index: 10000;
-  position: relative; }
-
-.calc-form-content {
+  position: relative;
   padding: 20px; }
-  @media (min-width: 1420px) {
-    .calc-form-content {
+  @media (min-width: 1440px) {
+    .calc-form {
       padding: 50px 60px; } }
+
+@media (min-width: 1440px) {
+  .calc-form-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .calc-form-title {
   font-family: 'Commissioner', Verdana, sans-serif;
   font-size: 30px;
   color: #283a5e; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .calc-form-title {
       font-size: 40px; } }
 
@@ -7221,7 +7268,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: url("../img/drop.svg") no-repeat;
   background-position: 99%;
   background-size: 17px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .calc-form-input {
       font-size: 40px; } }
   .calc-form-input::-webkit-input-placeholder {
@@ -7252,6 +7299,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 2px solid #dddddd; }
+  @media (min-width: 1440px) {
+    .input-wrapper {
+      border-right: 2px solid #dddddd;
+      border-bottom: 0;
+      width: 220px;
+      margin-right: 45px;
+      padding-right: 40px; } }
 
 .calc-form-note {
   color: #12b1ee;
@@ -7261,7 +7315,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .rooms-title {
   text-align: center;
   font-size: 40px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .rooms-title {
       font-size: 50px; } }
 
@@ -7328,7 +7382,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 25px;
   font-family: 'Commissioner', Verdana, sans-serif;
   color: #283a5e; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .services-list__title {
       font-size: 35px; } }
 
@@ -7338,7 +7392,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   padding-left: 20px;
   margin-bottom: 10px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .services-list__item {
       margin-bottom: 30px;
       font-size: 19px; } }
@@ -7351,7 +7405,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 4px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat; }
-    @media (min-width: 1420px) {
+    @media (min-width: 1440px) {
       .services-list__item::before {
         top: 8px; } }
 
@@ -7382,7 +7436,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: 'Commissioner', Verdana, sans-serif;
   color: #ffffff;
   font-size: 38px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .consultation__phone {
       font-size: 48px; } }
   .consultation__phone:hover {
@@ -7487,7 +7541,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .reservation {
   background-color: #12b1ee;
   padding: 20px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .reservation {
       padding: 40px 35px; } }
 
@@ -7495,7 +7549,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #ffffff;
   font-size: 30px;
   font-family: 'Commissioner', Verdana, sans-serif; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .reservation__title {
       font-size: 40px; } }
 
@@ -7653,7 +7707,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .other-object__title {
   color: #283a5e;
   font-size: 30px; }
-  @media (min-width: 1420px) {
+  @media (min-width: 1440px) {
     .other-object__title {
       font-size: 50px; } }
 
