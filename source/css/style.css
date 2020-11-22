@@ -5976,6 +5976,10 @@ h4 {
 
 .header-container {
   padding: 30px 10px; }
+  @media (min-width: 1420px) {
+    .header-container {
+      padding-left: 100px;
+      padding-right: 100px; } }
 
 .logo {
   width: 180px; }
@@ -6000,11 +6004,22 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (min-width: 1420px) {
+    .header-contact {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-top: 0;
+      margin-left: 40px; } }
 
 .header-contact-link {
   font-size: 20px;
   color: #ffffff;
   padding-left: 50px; }
+  @media (min-width: 1420px) {
+    .header-contact-link {
+      margin-right: 25px; } }
   .header-contact-link:hover {
     color: #ffffff; }
 
@@ -6012,6 +6027,9 @@ h4 {
   position: relative;
   display: inline-block;
   margin-bottom: 20px; }
+  @media (min-width: 1420px) {
+    .header-phone {
+      margin-bottom: 0; } }
   .header-phone::before {
     content: '';
     position: absolute;
@@ -6027,6 +6045,9 @@ h4 {
   position: relative;
   display: inline-block;
   margin-bottom: 20px; }
+  @media (min-width: 1420px) {
+    .header-wa {
+      margin-bottom: 0; } }
   .header-wa::before {
     content: '';
     position: absolute;
@@ -6065,9 +6086,15 @@ h4 {
 
 .open-menu {
   position: relative; }
+  @media (min-width: 1420px) {
+    .open-menu {
+      display: none; } }
 
 .hamb-icon {
   position: relative; }
+  @media (min-width: 1420px) {
+    .hamb-icon {
+      display: none; } }
   .hamb-icon::before {
     content: '';
     position: absolute;
@@ -6081,6 +6108,9 @@ h4 {
 
 .close-icon {
   position: relative; }
+  @media (min-width: 1420px) {
+    .close-icon {
+      display: none; } }
   .close-icon::before {
     content: '';
     position: absolute;
@@ -6100,6 +6130,13 @@ h4 {
 
 .subnav {
   color: #ffffff; }
+  @media (min-width: 1420px) {
+    .subnav {
+      position: absolute;
+      width: 300px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      list-style: none; } }
   .subnav a {
     color: #ffffff; }
 

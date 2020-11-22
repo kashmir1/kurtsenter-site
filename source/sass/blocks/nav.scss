@@ -4,10 +4,17 @@
 
 .open-menu {
   position: relative;
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
 }
 
 .hamb-icon {
   position: relative;
+
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
 
   &::before {
     content: '';
@@ -23,6 +30,9 @@
 }
 
 .close-icon {
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
   position: relative;
 
   &::before {
@@ -49,6 +59,14 @@
 
 .subnav {
   color: $white;
+
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    list-style: none;
+  }
 
   a {
     color: $white;

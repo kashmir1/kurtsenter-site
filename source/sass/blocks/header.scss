@@ -12,6 +12,11 @@
 
 .header-container {
   padding: 30px 10px;
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .logo {
@@ -31,6 +36,12 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 40px;
+  }
 }
 
 .header-contact-link {
@@ -38,6 +49,10 @@
   font-size: 20px;
   color: $white;
   padding-left: 50px;
+
+  @include media-breakpoint-up(xl) {
+    margin-right: 25px;
+  }
 
   &:hover {
     color: $white;
@@ -48,6 +63,10 @@
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 0;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -65,6 +84,10 @@
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 0;
+  }
   &::before {
     content: '';
     position: absolute;
