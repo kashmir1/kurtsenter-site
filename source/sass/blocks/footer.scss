@@ -1,8 +1,13 @@
 .footer__top {
   background-color: #1e3054;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #394968;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .footer__social-item {

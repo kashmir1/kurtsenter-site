@@ -6,7 +6,11 @@
 
 .other-object__title {
   color: #283a5e;
-  font-size: 50px;
+  font-size: 30px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 50px;
+  }
 }
 
 .other-object__object {

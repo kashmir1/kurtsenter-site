@@ -7,13 +7,21 @@
 }
 
 .calc-form-content {
-  padding: 50px 60px;
+  padding: 20px;
+
+  @include media-breakpoint-up(xl) {
+    padding: 50px 60px;
+  }
 }
 
 .calc-form-title {
   @include commissioner-font;
-  font-size: 40px;
+  font-size: 30px;
   color: $deep-blue;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 40px;
+  }
 }
 
 .calc-form-select-title {
@@ -57,12 +65,16 @@
 .calc-form-input {
   border: 0;
   height: 50px;
-  font-size: 40px;
+  font-size: 30px;
   color: #283a5e;
   font-weight: bold;
   background: url('../img/drop.svg') no-repeat;
   background-position: 99%;
   background-size: 17px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 40px;
+  }
 
   &::placeholder {
     font-size: 30px;

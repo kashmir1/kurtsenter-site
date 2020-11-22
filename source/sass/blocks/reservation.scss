@@ -1,12 +1,20 @@
 .reservation {
   background-color: #12b1ee;
-  padding: 40px 35px;
+  padding: 20px;
+
+  @include media-breakpoint-up(xl) {
+    padding: 40px 35px;
+  }
 }
 
 .reservation__title {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 30px;
   @include commissioner-font;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 40px;
+  }
 }
 
 .reservation__form {

@@ -5836,16 +5836,19 @@ body {
 h1 {
   color: #333333;
   font-weight: bold;
-  font-size: 32px; }
+  font-size: 40px; }
   @media (max-width: 979px) {
     h1 {
-      font-size: 30px;
+      font-size: 50px;
       font-weight: 500; } }
 
 h2 {
   font-family: 'Commissioner', Verdana, sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   color: #283a5e; }
+  @media (min-width: 1420px) {
+    h2 {
+      font-size: 40px; } }
 
 h3 {
   font-size: 18px;
@@ -5901,9 +5904,12 @@ h4 {
   padding-left: 35px;
   padding-top: 20px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   padding-right: 110px;
   height: 65px; }
+  @media (min-width: 1420px) {
+    .call-me {
+      font-size: 20px; } }
   .call-me:hover {
     color: #ffffff;
     text-decoration: none; }
@@ -5972,8 +5978,10 @@ h4 {
   padding: 30px 10px; }
 
 .logo {
-  width: 260px;
-  height: 35px; }
+  width: 180px; }
+  @media (min-width: 1420px) {
+    .logo {
+      width: 260px; } }
 
 .header-wrapper {
   display: -webkit-box;
@@ -6886,9 +6894,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .footer__top {
   background-color: #1e3054;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #394968; }
+  @media (min-width: 1420px) {
+    .footer__top {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
 
 .footer__social-item {
   display: -webkit-box;
@@ -7014,7 +7026,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 #carousel .slides {
   margin: 0;
-  max-width: 625px; }
+  max-width: 625px;
+  padding-left: 0; }
+
+#slider .flex-viewport {
+  height: 300px; }
+  #slider .flex-viewport img {
+    width: 100%; }
 
 #slider .flex-direction-nav {
   position: relative;
@@ -7062,24 +7080,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
   background-color: #000;
   background-repeat: no-repeat;
-  height: 950px; }
+  height: 650px; }
+  @media (min-width: 1420px) {
+    .promo {
+      height: 950px; } }
   .promo::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 950px;
+    height: 650px;
     background-image: url("../img/viktoriya.jpg");
     opacity: 0.4;
     z-index: 0; }
+    @media (min-width: 1420px) {
+      .promo::before {
+        height: 950px; } }
 
 .promo-content {
-  padding-top: 290px;
-  position: relative; }
+  position: relative;
+  padding-top: 80px; }
+  @media (min-width: 1420px) {
+    .promo-content {
+      padding-top: 290px; } }
 
 .promo-title {
-  font-size: 95px;
+  font-size: 40px;
   font-family: 'Commissioner', Verdana, sans-serif;
   color: #ffffff; }
+  @media (min-width: 1420px) {
+    .promo-title {
+      font-size: 95px; } }
 
 .promo-desc {
   color: #ffffff;
@@ -7101,12 +7131,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative; }
 
 .calc-form-content {
-  padding: 50px 60px; }
+  padding: 20px; }
+  @media (min-width: 1420px) {
+    .calc-form-content {
+      padding: 50px 60px; } }
 
 .calc-form-title {
   font-family: 'Commissioner', Verdana, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: #283a5e; }
+  @media (min-width: 1420px) {
+    .calc-form-title {
+      font-size: 40px; } }
 
 .calc-form-select-title {
   text-transform: uppercase;
@@ -7142,12 +7178,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .calc-form-input {
   border: 0;
   height: 50px;
-  font-size: 40px;
+  font-size: 30px;
   color: #283a5e;
   font-weight: bold;
   background: url("../img/drop.svg") no-repeat;
   background-position: 99%;
   background-size: 17px; }
+  @media (min-width: 1420px) {
+    .calc-form-input {
+      font-size: 40px; } }
   .calc-form-input::-webkit-input-placeholder {
     font-size: 30px;
     font-weight: normal; }
@@ -7183,14 +7222,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-align: center; }
 
 .rooms-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 40px; }
+  @media (min-width: 1420px) {
+    .rooms-title {
+      font-size: 50px; } }
 
 .rooms-item {
   width: 100%;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 16px 0px rgba(180, 179, 179, 0.37);
           box-shadow: 0px 0px 16px 0px rgba(180, 179, 179, 0.37);
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
 
 .rooms-type {
   font-size: 18px;
@@ -7244,25 +7288,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .services-list__title {
   position: relative;
-  font-size: 35px;
+  font-size: 25px;
   font-family: 'Commissioner', Verdana, sans-serif;
   color: #283a5e; }
+  @media (min-width: 1420px) {
+    .services-list__title {
+      font-size: 35px; } }
 
 .services-list__item {
   position: relative;
   color: #283a5e;
-  font-size: 19px;
+  font-size: 14px;
   padding-left: 20px;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
+  @media (min-width: 1420px) {
+    .services-list__item {
+      margin-bottom: 30px;
+      font-size: 19px; } }
   .services-list__item::before {
     content: '';
     position: absolute;
     width: 6px;
     height: 12px;
     left: 0;
-    top: 8px;
+    top: 4px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat; }
+    @media (min-width: 1420px) {
+      .services-list__item::before {
+        top: 8px; } }
 
 .services-list__link {
   color: #283a5e; }
@@ -7290,7 +7344,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .consultation__phone {
   font-family: 'Commissioner', Verdana, sans-serif;
   color: #ffffff;
-  font-size: 48px; }
+  font-size: 38px; }
+  @media (min-width: 1420px) {
+    .consultation__phone {
+      font-size: 48px; } }
   .consultation__phone:hover {
     color: #ffffff; }
 
@@ -7312,6 +7369,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #000;
   height: 180px;
   padding-left: 50px;
+  padding-right: 20px;
   padding-top: 40px;
   margin-bottom: 10px; }
   .location__adress::before {
@@ -7391,12 +7449,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .reservation {
   background-color: #12b1ee;
-  padding: 40px 35px; }
+  padding: 20px; }
+  @media (min-width: 1420px) {
+    .reservation {
+      padding: 40px 35px; } }
 
 .reservation__title {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Commissioner', Verdana, sans-serif; }
+  @media (min-width: 1420px) {
+    .reservation__title {
+      font-size: 40px; } }
 
 .reservation__form {
   background-color: white;
@@ -7551,7 +7615,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .other-object__title {
   color: #283a5e;
-  font-size: 50px; }
+  font-size: 30px; }
+  @media (min-width: 1420px) {
+    .other-object__title {
+      font-size: 50px; } }
 
 .other-object__object {
   background-color: white;

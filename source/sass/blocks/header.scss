@@ -15,8 +15,11 @@
 }
 
 .logo {
-  width: 260px;
-  height: 35px;
+  width: 180px;
+  @include media-breakpoint-up(xl) {
+    width: 260px;
+  }
+
 }
 
 .header-wrapper {

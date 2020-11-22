@@ -22,10 +22,21 @@
   .slides {
     margin: 0;
     max-width: 625px;
+    padding-left: 0;
   }
 }
 
+
+
 #slider {
+
+  .flex-viewport {
+    height: 300px;
+    img {
+      width: 100%;
+    }
+  }
+
   .flex-direction-nav {
     position: relative;
     display: flex;

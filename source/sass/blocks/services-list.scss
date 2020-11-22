@@ -1,8 +1,12 @@
 .services-list__title {
   position: relative;
-  font-size: 35px;
+  font-size: 25px;
   @include commissioner-font;
   color: #283a5e;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 35px;
+  }
 }
 
 .services-list__list {
@@ -12,9 +16,14 @@
 .services-list__item {
   position: relative;
   color: #283a5e;
-  font-size: 19px;
+  font-size: 14px;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 30px;
+    font-size: 19px;
+  }
 
   &::before {
     content: '';
@@ -22,9 +31,13 @@
     width: 6px;
     height: 12px;
     left: 0;
-    top: 8px;
+    top: 4px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
+
+    @include media-breakpoint-up(xl) {
+      top: 8px;
+    }
   }
 }
 

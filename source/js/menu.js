@@ -2,7 +2,6 @@ var navMain = document.querySelector('.nav-list');
 var navToggle = document.querySelector('.open-menu');
 
 navToggle.addEventListener('click', function (evt) {
-  debugger
   evt.preventDefault();
   if (!navMain.classList.contains('d-none')) {
 

@@ -22,7 +22,11 @@
 .consultation__phone {
   @include commissioner-font;
   color: #ffffff;
-  font-size: 48px;
+  font-size: 38px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 48px;
+  }
 
   &:hover {
     color: #ffffff;
