@@ -7591,6 +7591,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   @media (min-width: 1440px) {
     .reservation {
       padding: 40px 35px; } }
+  @media (min-width: 1440px) {
+    .reservation .about-call-me {
+      width: 300px;
+      height: 65px;
+      margin-right: 10px; } }
 
 .reservation__title {
   color: #ffffff;
@@ -7604,6 +7609,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: white;
   padding: 40px 20px 20px; }
 
+@media (min-width: 1440px) {
+  .managers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
 .managers .img-container {
   border-radius: 10px; }
 
@@ -7616,6 +7630,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px; }
+  @media (min-width: 1440px) {
+    .managers__manager {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .managers__name {
   color: #12b1ee;

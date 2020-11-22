@@ -5,6 +5,14 @@
   @include media-breakpoint-up(xl) {
     padding: 40px 35px;
   }
+
+  .about-call-me {
+    @include media-breakpoint-up(xl) {
+      width: 300px;
+      height: 65px;
+      margin-right: 10px;
+    }
+  }
 }
 
 .reservation__title {

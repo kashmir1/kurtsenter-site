@@ -1,4 +1,10 @@
 .managers {
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .img-container {
     border-radius: 10px;
   }
@@ -8,6 +14,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+  }
 }
 
 .managers__name {
