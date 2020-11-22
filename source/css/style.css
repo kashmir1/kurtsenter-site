@@ -7703,4 +7703,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 24px;
   color: #000000; }
 
+.neardy-resorts__title {
+  font-family: 'Commissioner', Verdana, sans-serif;
+  color: #283a5e;
+  font-size: 25px; }
+
+.neardy-resorts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px; }
+
+.neardy-resorts__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px; }
+
+.neardy-resorts__city {
+  color: #283a5e;
+  font-size: 18px; }
+
+.neardy-resorts__link {
+  font-weight: bold;
+  color: #17b3ee;
+  font-size: 18px; }
+
 /*# sourceMappingURL=style.css.map */

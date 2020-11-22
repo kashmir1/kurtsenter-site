@@ -1,0 +1,28 @@
+.neardy-resorts__title {
+  @include commissioner-font;
+  color: #283a5e;
+  font-size: 25px;
+}
+
+.neardy-resorts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.neardy-resorts__desc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.neardy-resorts__city {
+  color: #283a5e;
+  font-size: 18px;
+}
+
+.neardy-resorts__link {
+  font-weight: bold;
+  color: #17b3ee;
+  font-size: 18px;
+}
