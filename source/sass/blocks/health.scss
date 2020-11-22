@@ -7,6 +7,13 @@
 .health__list {
   border-bottom: 1px solid #e1ebfe;
   margin-bottom: 25px;
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
 }
 
 .health__list--no-border {

@@ -6,6 +6,11 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+
+  @include media-breakpoint-up(xl) {
+    height: 160px;
+    padding: 0;
+  }
 }
 
 .consultation--call {

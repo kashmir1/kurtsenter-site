@@ -23,6 +23,8 @@
   @include media-breakpoint-up(xl) {
     margin-bottom: 30px;
     font-size: 19px;
+    width: 320px;
+    margin-right: 30px;
   }
 
   &::before {

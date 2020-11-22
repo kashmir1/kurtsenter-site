@@ -7091,6 +7091,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: #ffffff;
     text-decoration: none; }
 
+@media (min-width: 1440px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
 #carousel li {
   height: 60px;
   margin-bottom: 20px; }
@@ -7106,8 +7112,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: 625px;
   padding-left: 0; }
 
+@media (min-width: 1440px) {
+  .about__content {
+    margin-left: 100px; } }
+
 #slider .flex-viewport {
   height: 300px; }
+  @media (min-width: 1440px) {
+    #slider .flex-viewport {
+      height: 100%;
+      width: 625px; } }
   #slider .flex-viewport img {
     width: 100%; }
 
@@ -7303,9 +7317,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .input-wrapper {
       border-right: 2px solid #dddddd;
       border-bottom: 0;
-      width: 220px;
-      margin-right: 45px;
-      padding-right: 40px; } }
+      width: 240px;
+      margin-right: 20px;
+      padding-right: 20px;
+      white-space: nowrap; } }
 
 .calc-form-note {
   color: #12b1ee;
@@ -7363,6 +7378,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .health__list {
   border-bottom: 1px solid #e1ebfe;
   margin-bottom: 25px; }
+  @media (min-width: 1440px) {
+    .health__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 30px; } }
 
 .health__list--no-border {
   border: 0; }
@@ -7409,7 +7436,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   @media (min-width: 1440px) {
     .services-list__item {
       margin-bottom: 30px;
-      font-size: 19px; } }
+      font-size: 19px;
+      width: 320px;
+      margin-right: 30px; } }
   .services-list__item::before {
     content: '';
     position: absolute;
@@ -7436,6 +7465,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover; }
+  @media (min-width: 1440px) {
+    .consultation {
+      height: 160px;
+      padding: 0; } }
 
 .consultation--call {
   background-color: #5aab19;
