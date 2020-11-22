@@ -7378,6 +7378,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat; }
 
+.services-list__link {
+  color: #283a5e; }
+  .services-list__link:hover {
+    color: #283a5e; }
+
 .consultation {
   width: 100%;
   padding-bottom: 30px;
