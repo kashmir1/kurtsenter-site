@@ -14,6 +14,9 @@
   box-shadow: 0 0 14px 0 rgba(180,179,179,0.11);
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 
   .img-container {
     height: 284px;
@@ -23,4 +26,22 @@
 .other-object__object-title {
   font-size: 30px;
   color: #000000;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+.other-object__rate {
+  color: #1d1c1c;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.other-object__price {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  color: #000000;
+}
+
