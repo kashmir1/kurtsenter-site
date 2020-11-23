@@ -6127,6 +6127,64 @@ h4 {
     background-repeat: no-repeat;
     z-index: 1000; }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black with a little bit see-through */ }
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto; }
+
+/* Close button */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white; }
+
+.overlay .closebtn:hover {
+  color: #ccc; }
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white; }
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1; }
+
+/* Style the submit button */
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer; }
+
+.overlay button:hover {
+  background: #bbb; }
+
 .open-menu {
   position: relative; }
   @media (min-width: 1440px) {
@@ -7248,7 +7306,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-box-shadow: 0px 0px 17px 4px rgba(85, 85, 85, 0.1);
           box-shadow: 0px 0px 17px 4px rgba(85, 85, 85, 0.1);
   margin-top: -80px;
-  z-index: 10000;
+  z-index: 1000;
   position: relative;
   padding: 20px; }
   @media (min-width: 1440px) {

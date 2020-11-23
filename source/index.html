@@ -90,7 +90,7 @@
             <a class="header-user-link header__user-link--user" href="">
 
             </a>
-            <a class="header-user-link header__user-link--search" href="">
+            <a class="header-user-link header__user-link--search" onclick="openSearch(event)" href="">
 
             </a>
             <a class="header-user-link header__user-link--favorites" href="">
@@ -104,6 +104,15 @@
     </div>
 
 
+  </div>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+    <div class="overlay-content">
+      <form action="">
+        <input type="text" placeholder="Поиск.." name="search">
+        <button type="submit"><i class="fa fa-search">Найти</i></button>
+      </form>
+    </div>
   </div>
 </header>
 
