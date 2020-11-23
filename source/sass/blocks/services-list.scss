@@ -51,3 +51,13 @@
     color: #283a5e;
   }
 }
+
+.services-list__subtitle {
+  max-width: 330px;
+  color: #283a5e;
+  font-size: 18px;
+  @include commissioner-font;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}

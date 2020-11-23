@@ -7,7 +7,23 @@
   padding-left: 20px;
 }
 
+.city-sanatoryes__list {
+}
+
 .city-sanatoryes__item {
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    align-items: center;
+
+    .img-container {
+      width: 143px;
+      height: 143px;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
   position: relative;
   padding: 10px;
   border: 1px solid #959595;
@@ -15,7 +31,15 @@
   margin-bottom: 10px;
 }
 
-.city-sanatoryes__favirite {
+.city-sanatoryes__item-wrapper {
+  @include media-breakpoint-up(xl) {
+    width: 640px;
+    padding-right: 30px;
+    border-right: 1px solid #e6e6e6;
+  }
+}
+
+.city-sanatoryes__favorite {
   display: inline-block;
   position: absolute;
   top: 20px;
@@ -36,11 +60,23 @@
   color: #7d7d7d;
   font-size: 14px;
   line-height: 18px;
+
+  @include media-breakpoint-up(xl) {
+    margin: 0;
+  }
 }
 
 .city-sanatoryes__rate-wrapper {
   display: flex;
   flex-direction: column;
+
+  @include media-breakpoint-up(xl) {
+    justify-content: center;
+    padding-right: 20px;
+    border-right: 1px solid #e6e6e6;
+    height: 144px;
+    margin-right: 20px;
+  }
 }
 
 .city-sanatoryes_rate {

@@ -25,6 +25,12 @@
   }
 }
 
+.city-sanatoryes__rate-wrapper {
+  @include media-breakpoint-up(xl) {
+    padding-left: 25px;
+  }
+}
+
 .reservation__title--city {
   text-align: center;
   font-size: 36px;
