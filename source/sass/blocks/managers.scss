@@ -7,6 +7,11 @@
 
   .img-container {
     border-radius: 10px;
+
+    @include media-breakpoint-up(xl) {
+      width: 286px;
+      height: 286px;
+    }
   }
 }
 
@@ -17,6 +22,14 @@
 
   @include media-breakpoint-up(xl) {
     flex-direction: row;
+  }
+}
+
+.managers__manager-content {
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(xl) {
+    margin-left: 45px;
   }
 }
 
