@@ -5,8 +5,8 @@
   border-bottom: 1px solid #394968;
 
   @include media-breakpoint-up(xl) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -120,6 +120,11 @@
 
 .footer__nav-item {
   font-size: 16px;
+
+  @include media-breakpoint-up(xl) {
+    width: 280px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__nav-link {
@@ -129,5 +134,41 @@
   &:hover {
     color: #ffffff;
     text-decoration: none;
+  }
+}
+
+.footer__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #192b4e;
+}
+
+.footer__bottom-item {
+  font-size: 15px;
+  position: relative;
+  margin-right: 20px;
+
+  &::after {
+    content: '|';
+    color: white;
+    position: absolute;
+    right: -20px;
+  }
+}
+
+.footer__bottom-item {
+
+  &:last-child {
+    &::after {
+      content: '';
+    }
+  }
+}
+
+.footer__bottom-link {
+  color: white;
+
+  &:hover {
+    color: white;
   }
 }

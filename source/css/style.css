@@ -5979,7 +5979,10 @@ h4 {
   width: 100%; }
 
 .header-navbar {
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.8); }
+  @media (min-width: 1440px) {
+    .header-navbar {
+      background-color: rgba(0, 0, 0, 0.4); } }
 
 .header-container {
   padding: 30px 10px; }
@@ -6976,8 +6979,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-bottom: 1px solid #394968; }
   @media (min-width: 1440px) {
     .footer__top {
-      padding-top: 40px;
-      padding-bottom: 40px; } }
+      padding-top: 30px;
+      padding-bottom: 30px; } }
 
 .footer__social-item {
   display: -webkit-box;
@@ -7083,6 +7086,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .footer__nav-item {
   font-size: 16px; }
+  @media (min-width: 1440px) {
+    .footer__nav-item {
+      width: 280px;
+      margin-bottom: 20px; } }
 
 .footer__nav-link {
   color: #ffffff;
@@ -7090,6 +7097,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .footer__nav-link:hover {
     color: #ffffff;
     text-decoration: none; }
+
+.footer__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #192b4e; }
+
+.footer__bottom-item {
+  font-size: 15px;
+  position: relative;
+  margin-right: 20px; }
+  .footer__bottom-item::after {
+    content: '|';
+    color: white;
+    position: absolute;
+    right: -20px; }
+
+.footer__bottom-item:last-child::after {
+  content: ''; }
+
+.footer__bottom-link {
+  color: white; }
+  .footer__bottom-link:hover {
+    color: white; }
 
 @media (min-width: 1440px) {
   .about {
@@ -7453,7 +7483,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         top: 8px; } }
 
 .services-list__link {
-  color: #283a5e; }
+  color: #283a5e;
+  text-decoration: underline; }
   .services-list__link:hover {
     color: #283a5e; }
 
@@ -7800,8 +7831,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .other-object__object {
   background-color: white;
-  -webkit-box-shadow: 0 0 14px 0 rgba(180, 179, 179, 0.11);
-          box-shadow: 0 0 14px 0 rgba(180, 179, 179, 0.11);
+  -webkit-box-shadow: 0 0 14px 0 rgba(180, 179, 179, 0.3);
+          box-shadow: 0 0 14px 0 rgba(180, 179, 179, 0.3);
   border-radius: 4px;
   overflow: hidden;
   display: -webkit-box;
@@ -7812,6 +7843,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px; }
+  @media (min-width: 1440px) {
+    .other-object__object {
+      width: 410px;
+      height: 450px;
+      margin-right: 75px; } }
   .other-object__object .img-container {
     height: 284px; }
 
@@ -7847,6 +7883,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px; }
+  @media (min-width: 1440px) {
+    .neardy-resorts__item {
+      width: 435px; } }
 
 .neardy-resorts__desc {
   display: -webkit-box;

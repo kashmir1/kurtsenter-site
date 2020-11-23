@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    width: 435px;
+  }
 }
 
 .neardy-resorts__desc {

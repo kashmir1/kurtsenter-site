@@ -15,12 +15,18 @@
 
 .other-object__object {
   background-color: white;
-  box-shadow: 0 0 14px 0 rgba(180,179,179,0.11);
+  box-shadow: 0 0 14px 0 rgba(180,179,179,0.3);
   border-radius: 4px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  @include media-breakpoint-up(xl) {
+    width: 410px;
+    height: 450px;
+    margin-right: 75px;
+  }
 
   .img-container {
     height: 284px;
