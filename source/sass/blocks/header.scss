@@ -6,12 +6,20 @@
   width: 100%;
 }
 
+.header--small {
+  position: relative;
+}
+
 .header-navbar {
   background-color: rgba(0, 0, 0, 0.8);
   @include media-breakpoint-up(xl) {
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+}
+
+.header-navbar--small {
+  background-color: black;
 }
 
 .header-container {

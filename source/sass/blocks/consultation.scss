@@ -24,6 +24,10 @@
   padding-top: 40px;
 }
 
+.consultation__title--city {
+  font-size: 36px;
+}
+
 .consultation__phone {
   @include commissioner-font;
   color: #ffffff;
