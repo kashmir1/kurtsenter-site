@@ -25,7 +25,18 @@
   }
 }
 
+.reservation__title--city {
+  text-align: center;
+  font-size: 36px;
+}
+
 .reservation__form {
   background-color: white;
   padding: 40px 20px 20px;
+}
+
+.reservation__subtitle {
+  font-size: 24px;
+  color: white;
+  text-align: center;
 }
