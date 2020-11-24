@@ -10,3 +10,90 @@
   font-size: 40px;
 }
 
+.advantages__item {
+  padding: 140px 20px 20px;
+  position: relative;
+  background-color: #79c7e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.advantages__item--manager {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    background-image: url("../img/managers.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--overpayment {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    background-image: url("../img/overpayment.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--fine {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    background-image: url("../img/fine.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--easy {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    background-image: url("../img/easy-pay.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--insurance {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    background-image: url("../img/insurance.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item-title {
+  color: white;
+  @include commissioner-font;
+  font-size: 24px;
+  text-align: center;
+}
+
+.advantages__item-desc {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+
+
+
