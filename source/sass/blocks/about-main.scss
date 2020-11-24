@@ -1,0 +1,13 @@
+.about-main {
+  p {
+    color: #687693;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  h3{
+    @include commissioner-font;
+    font-size: 22px;
+    color: #12b1ee;
+  }
+}

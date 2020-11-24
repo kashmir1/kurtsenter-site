@@ -1,0 +1,12 @@
+.advantages {
+  background-color: #12b1ee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.advantages__title {
+  color: white;
+  @include commissioner-font;
+  font-size: 40px;
+}
+

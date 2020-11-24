@@ -8454,4 +8454,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           box-shadow: 0px 5px 13px 0px rgba(21, 44, 91, 0.1);
   margin-bottom: 20px; }
 
+.about-main p {
+  color: #687693;
+  font-size: 18px;
+  line-height: 30px; }
+
+.about-main h3 {
+  font-family: 'Commissioner', Verdana, sans-serif;
+  font-size: 22px;
+  color: #12b1ee; }
+
+.advantages {
+  background-color: #12b1ee;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.advantages__title {
+  color: white;
+  font-family: 'Commissioner', Verdana, sans-serif;
+  font-size: 40px; }
+
 /*# sourceMappingURL=style.css.map */
