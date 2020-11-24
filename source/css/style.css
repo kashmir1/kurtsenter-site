@@ -5851,9 +5851,13 @@ h2 {
       font-size: 40px; } }
 
 h3 {
-  font-size: 18px;
-  font-weight: normal;
-  color: #333333; }
+  font-family: 'Commissioner', Verdana, sans-serif;
+  font-size: 25px;
+  color: #283a5e;
+  font-weight: bold; }
+  @media (min-width: 1440px) {
+    h3 {
+      font-size: 30px; } }
 
 h4 {
   font-size: 17px;
@@ -5937,6 +5941,28 @@ h4 {
     .container {
       padding: 0;
       max-width: 1420px; } }
+
+p {
+  color: #384f7c;
+  font-size: 21px;
+  line-height: 35px; }
+
+.input-textares {
+  width: 100%;
+  height: 65px;
+  border: 1px solid #516388;
+  padding-left: 20px;
+  font-size: 18px; }
+  .input-textares::-webkit-input-placeholder {
+    color: #7e8fb0; }
+  .input-textares::-moz-placeholder {
+    color: #7e8fb0; }
+  .input-textares:-ms-input-placeholder {
+    color: #7e8fb0; }
+  .input-textares::-ms-input-placeholder {
+    color: #7e8fb0; }
+  .input-textares::placeholder {
+    color: #7e8fb0; }
 
 .visually-hidden {
   position: absolute;
@@ -6259,7 +6285,9 @@ h4 {
           justify-content: center;
   list-style: none;
   padding-left: 0;
-  margin-top: 50px; }
+  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .breadcrumb__item {
   font-size: 18px;
@@ -7317,6 +7345,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .promo__small .img-container {
     position: absolute;
     width: 100%;
+    height: auto;
     margin: 0; }
     .promo__small .img-container img {
       opacity: 0.7; }
@@ -7324,12 +7353,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .promo__small {
       height: 400px; } }
 
+.promo__small--city {
+  position: relative; }
+  .promo__small--city::before {
+    position: absolute;
+    content: '';
+    background-image: url("../img/kislovodsk.jpg");
+    opacity: 0.7;
+    width: 100%;
+    height: 400px; }
+
 .promo__title--small {
   text-align: center;
   color: white;
-  font-size: 60px;
+  font-size: 30px;
   font-family: 'Commissioner', Verdana, sans-serif;
   margin-bottom: 10px; }
+  @media (min-width: 1440px) {
+    .promo__title--small {
+      font-size: 60px; } }
 
 .promo__city-img {
   opacity: 0.7; }
@@ -8190,5 +8232,226 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .city-sanatoryes__price-condition {
   font-size: 10px;
   color: #8b8b8b; }
+
+@media (min-width: 1440px) {
+  .regions__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.regions__item {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  overflow: hidden; }
+  @media (min-width: 1440px) {
+    .regions__item {
+      height: 260px;
+      width: 680px;
+      margin-right: 60px; }
+      .regions__item:nth-of-type(even) {
+        margin-right: 0; } }
+  .regions__item .img-container {
+    z-index: 0;
+    left: 0;
+    position: absolute;
+    height: 260px; }
+
+.regions__places {
+  display: none; }
+
+.regions__title {
+  margin-top: 20px;
+  margin-bottom: auto;
+  position: relative;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Commissioner', Verdana, sans-serif;
+  color: #283a5e;
+  width: 310px;
+  font-size: 25px;
+  min-height: 60px;
+  background-color: rgba(255, 255, 255, 0.8); }
+  @media (min-width: 1440px) {
+    .regions__title {
+      padding-bottom: 20px;
+      margin: auto auto 0;
+      padding-top: 20px; } }
+  .regions__title:hover {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 10px; }
+    .regions__title:hover .regions__places {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      font-size: 14px; }
+      @media (min-width: 1440px) {
+        .regions__title:hover .regions__places {
+          margin-bottom: 0; } }
+
+.regions__places-item {
+  margin-right: 20px;
+  font-family: 'Nunito', Arial, sans-serif; }
+
+.regions__link {
+  color: #727171;
+  font-size: 12px;
+  text-decoration: underline; }
+  @media (min-width: 1440px) {
+    .regions__link {
+      font-size: 18px; } }
+  .regions__link:hover {
+    color: #727171;
+    text-decoration: none; }
+
+@media (min-width: 1440px) {
+  .popular__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.popular__item {
+  margin-bottom: 20px; }
+  @media (min-width: 1440px) {
+    .popular__item {
+      width: 220px;
+      margin-right: 20px; }
+      .popular__item:nth-of-type(6n) {
+        margin-right: 0; } }
+
+.popular__title {
+  color: #283a5e;
+  font-size: 16px;
+  font-family: 'Commissioner', Verdana, sans-serif; }
+
+.popular__link {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #12b1ee; }
+
+.resort-choose__item {
+  position: relative;
+  height: 440px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px; }
+  .resort-choose__item .img-container {
+    z-index: 0;
+    left: 0;
+    position: absolute; }
+    .resort-choose__item .img-container img {
+      height: auto; }
+
+.resort-choose__item--kmv {
+  background-image: url("../img/kmv.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.resort-choose__detail {
+  display: none; }
+
+.resort-choose__places {
+  display: none; }
+
+.resort-choose__title {
+  margin-top: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 20px;
+  padding-right: 20px; }
+  .resort-choose__title h3 {
+    color: #283a5e;
+    font-size: 25px;
+    font-family: 'Commissioner', Verdana, sans-serif;
+    font-weight: bold; }
+  .resort-choose__title:hover {
+    margin-top: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 20px;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .resort-choose__title:hover .resort-choose__places {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .resort-choose__title:hover .resort-choose__detail {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: auto;
+      padding-bottom: 20px; }
+
+.resort-choose__price-wrapper {
+  color: #283a5e;
+  font-weight: bold; }
+
+.resort-choose__price {
+  font-size: 16px; }
+
+.resort-choose__price-value {
+  font-size: 22px; }
+
+.map__map {
+  padding: 30px;
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(21, 44, 91, 0.1);
+          box-shadow: 0px 5px 13px 0px rgba(21, 44, 91, 0.1);
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

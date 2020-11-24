@@ -1,0 +1,89 @@
+.resort-choose__item {
+  position: relative;
+  height: 440px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+
+  .img-container {
+    z-index: 0;
+    left: 0;
+    position: absolute;
+    //height: 440px;
+
+    img {
+      height: auto;
+    }
+  }
+}
+
+.resort-choose__item--kmv {
+  background-image: url("../img/kmv.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resort-choose__detail {
+  display: none;
+}
+
+.resort-choose__places {
+  display: none;
+}
+
+.resort-choose__title {
+  margin-top: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  h3 {
+    color: #283a5e;
+    font-size: 25px;
+    @include commissioner-font;
+    font-weight: bold;
+  }
+
+  &:hover {
+    margin-top: 20px;
+    align-items: flex-start;
+    padding-top: 20px;
+    height: 100%;
+    justify-content: flex-start;
+
+    .resort-choose__places {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .resort-choose__detail {
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.resort-choose__price-wrapper {
+  color: #283a5e;
+  font-weight: bold;
+}
+
+.resort-choose__price {
+  font-size: 16px;
+}
+
+.resort-choose__price-value {
+  font-size: 22px;
+}

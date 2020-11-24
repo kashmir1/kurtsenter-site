@@ -1,0 +1,32 @@
+.popular__list {
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.popular__item {
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(xl) {
+    width: 220px;
+    margin-right: 20px;
+
+    &:nth-of-type(6n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.popular__title {
+  color: #283a5e;
+  font-size: 16px;
+  @include commissioner-font;
+}
+
+.popular__link {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #12b1ee;
+}

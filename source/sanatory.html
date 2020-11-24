@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Курцентр</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Курцентр">
+  <meta name="Keywords" content="Курцентр">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+<!--    <link rel="stylesheet" href="css/style.min.css">-->
+</head>
+<!--Хедер-->
+<body>
+
+<header class="header">
+  <div class="container-fluid header-navbar">
+    <div class="header-container d-xl-flex justify-content-xl-between align-items-xl-center">
+      <div class="header-wrapper">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+        <a href="" class="open-menu hamb-icon d-xl-none"></a>
+      </div>
+      <nav class="main-nav mr-xl-auto ml-xl-5">
+        <div class="nav-list d-none d-xl-flex align-items-xl-center">
+          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Выбрать курорт +</a>
+            <ul class="subnav d-none">
+              <li class="subnav-item">
+                <a href="">
+                  <span class="text-danger">Кавказские Минеральные Воды</span></a>
+              </li>
+              <li>
+                <a href="">
+                  Кисловодск</a>
+              </li>
+              <li>
+                <a href="">
+                  Ессентуки</a>
+              </li>
+              <li>
+                <a href="">
+                  Пятигорск</a>
+              </li>
+              <li>
+                <a href="">
+                  Железноводск</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Акции +</a>
+            <ul class="subnav d-none">
+              <li class="subnav-item">
+                <a href="">
+                  <span class="text-danger">Акции</span></a>
+              </li>
+              <li>
+                <a href="">
+                  Кисловодск</a>
+              </li>
+              <li>
+                <a href="">
+                  Ессентуки</a>
+              </li>
+              <li>
+                <a href="">
+                  Пятигорск</a>
+              </li>
+              <li>
+                <a href="">
+                  Железноводск</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item"><a class="nav-link" href="">Подобрать отель по услугам</a></div>
+          <div class="nav-item"><a class="nav-link" href="">Оплатить</a></div>
+
+          <div class="header-contact">
+            <a class="header-contact-link header-phone" href="tel:+78043337320">8(804)333-73-20</a>
+            <a class="header-contact-link header-wa" href="https://api.whatsapp.com/send?phone=79188879696">8(918)887-96-96</a>
+          </div>
+
+          <div class="header-user-links">
+            <a class="header-user-link header__user-link--user" href="">
+
+            </a>
+            <a class="header-user-link header__user-link--search" onclick="openSearch(event)" href="">
+
+            </a>
+            <a class="header-user-link header__user-link--favorites" href="">
+
+            </a>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+
+
+  </div>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+    <div class="overlay-content">
+      <form action="">
+        <input type="text" placeholder="Поиск.." name="search">
+        <button type="submit"><i class="fa fa-search">Найти</i></button>
+      </form>
+    </div>
+  </div>
+</header>
+
+
+<main class="main-page">
+  <section class="promo">
+    <div class="container">
+      <div class="promo-content">
+        <h1 class="promo-title mt-xl-0">
+          Санаторий Виктория
+          Кисловодск
+        </h1>
+        <span class="promo-desc">Путевки с гарантией лучшей цены</span>
+        <a class="button-main promo-button" href="">Подобрать номер</a>
+      </div>
+
+    </div>
+
+  </section>
+  <div class="container">
+    <section class="calc-form">
+      <h2 class="calc-form-title">Рассчитать стоимость отдыха</h2>
+      <div class="calc-form-content">
+
+        <div class="input-wrapper mt-4">
+          <label for="arrival" class="calc-form-select-title calc-form-select-title--date">
+            Дата заезда
+          </label>
+          <input id="arrival" class="calc-form-input" type="text">
+        </div>
+        <div class="input-wrapper mt-3">
+          <label for="departure" class="calc-form-select-title calc-form-select-title--date">
+            Дата выезда
+          </label>
+          <input id="departure" class="calc-form-input" type="text">
+        </div>
+        <div class="input-wrapper mt-3">
+          <label for="adults" class="calc-form-select-title calc-form-select-title--user">
+            Взрослые
+          </label>
+          <input type="number" id="adults" class="calc-form-input calc-form-input--number" value="1">
+
+        </div>
+        <div class="input-wrapper mt-3">
+          <label for="kids" class="calc-form-select-title calc-form-select-title--user">
+            Дети
+          </label>
+          <input type="number" id="kids" class="calc-form-input calc-form-input--number" value="1">
+        </div>
+        <a class="button-main promo-button mt-xl-0" href="">Показать цены</a>
+
+      </div>
+    </section>
+    <p class="calc-form-note mt-5">Измените параметры поиска, чтобы показать другие номера и цены</p>
+    <section class="rooms">
+      <h2 class="rooms-title mb-3">Номера и цены</h2>
+      <div class="rooms__wrapper">
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+        <div class="rooms-item">
+          <div class="img-container">
+            <img src="img/room1.jpg" alt="">
+          </div>
+          <p class="rooms-type">2-х местный 1-комнатный</p>
+          <span class="rooms-price">от 4000 руб</span>
+          <span class="rooms-price-note">в сутки за 1 человека</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about mt-5">
+      <div class="about__slider">
+        <div id="slider" class="flexslider">
+          <ul class="slides p-0">
+            <li>
+              <img src="img/slide1.jpg" alt="">
+            </li>
+            <li>
+              <img src="img/slide2.jpg" alt="">
+            </li>
+            <li>
+              <img src="img/slide3.jpg" alt="">
+            </li>
+            <li>
+              <img src="img/slide4.jpg" alt="">
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="img/slide1.jpg" alt="">
+            </li>
+            <li>
+              <img src="img/slide2.jpg" alt="">
+            </li>
+            <li>
+              <img src="img/slide3.jpg" alt="">
+            </li>
+            <li>
+              <img src="img/slide4.jpg" alt="">
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+          </ul>
+        </div>
+      </div>
+      <div class="about__content">
+        <p class="calc-form-note mt-5">Санаторий Виктория - рекомендуют более 90%
+          гостей, отдыхавших там</p>
+        <h2 class="rooms-title mb-xl-5">Санаторий «Виктория»</h2>
+        <p class="about-content">Самый прославленный бальнеологический курорт Кисловодск приглашает отдохнуть и оздоровиться в современном многопрофильном санатории "Виктория". Функционирует здравница с 2000 года и рассчитана на единовременный прием 582 человек. Одиннадцатиэтажный основной корпус, оснащенный лифтами, располагает номерами категорий "стандарт", "повышенной комфортности", "улучшенный", "люкс" и "апартаменты". Все номера оборудованы необходимой техникой, мебелью, ванными комнатами.</p>
+        <p class="about-content">Расположен санаторий в 10 минутах ходьбы от центральной нарзанной галереи, знаменитого курортного парка Кисловодска и в 2 минутах ходьбы от Желябовского источника. Кстати, на территории "Виктории" находится собственный бювет с минеральной водой "Славяновская", "Ессентуки 4". А лечебная база здравницы с широким перечнем процедур направлена на лечение сердечно-сосудистой, дыхательной систем, опорно-двигательного аппарата и желудочно-кишечного тракта.</p>
+        <p class="about-content">Досуг в санатории организован с учетом возрастных предпочтений отдыхающих: для самых маленьких открыта детская комната с многочисленными игрушками, сухим бассейном и батутом, подростков несомненно заинтересуют компьютерные игры, аэрохоккей и настольный теннис, молодежи предлагается скоротать вечер в боулинге или бильярдном зале, а также в ресторане "Арт-зал", где проводятся разнообразные вечеринки, а поколению постарше предоставлена возможность насладиться яркими выступлениями местных и приезжих артистов, поучаствовать в увлекательных мастер-классах по танцам и вечерах караоке.</p>
+        <h3 class="about-h3">
+          Менеджер может перезвонить вам за 30 секунд
+        </h3>
+        <div class="d-xl-flex align-items-xl-center mt-xl-5">
+          <input type="text" class="about-call-me" placeholder="Ваш телефон">
+          <a class="call-me mt-3 mt-xl-0" href="">Перезвоните мне</a>
+        </div>
+
+      </div>
+
+
+
+    </section>
+    <section class="health mt-5">
+      <h2 class="mt-xl-5">Лечение в Санатории Виктория Кисловодск:</h2>
+      <h3 class="health__title">
+        Основной лечебный профиль
+      </h3>
+      <div class="health__list">
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/stomach.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Заболевания
+            желудочно-кишечного тракта
+          </a>
+
+        </div>
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/bones.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Заболевания
+            опорно-двигательного аппарата
+          </a>
+
+        </div>
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/liver.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Заболевания органов
+            дыхания
+          </a>
+
+        </div>
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/heart.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Заболевания сердечно-сосудистой системы
+          </a>
+
+        </div>
+      </div>
+      <h3 class="health__title">
+        Сопутствующие заболевания
+      </h3>
+      <div class="health__list health__list--no-border">
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/uterus.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Гинекологические
+            заболевания
+          </a>
+
+        </div>
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/brain.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Заболевания
+            нервной системы
+          </a>
+
+        </div>
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/endocrinology.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Заболевания эндокринной
+            системы
+          </a>
+
+        </div>
+        <div class="health__item">
+          <div class="img-container">
+            <img class="health__img" src="img/urina.svg" alt="">
+          </div>
+          <a class="health__link" href="">
+            Урологические
+            заболевания
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="services-list">
+      <h3 class="services-list__title">Процедуры и лечебно-диагностическая база</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Аппаратный массаж  </li>
+        <li class="services-list__item">Аэрофитотерапия   </li>
+        <li class="services-list__item">Биохимические исследования</li>
+        <li class="services-list__item">Валериановые ванны</li>
+        <li class="services-list__item">Ванна нафталановая</li>
+        <li class="services-list__item">Ванны с экстрактами трав</li>
+        <li class="services-list__item">Велоэргометрия</li>
+        <li class="services-list__item">Вибровакуумная терапия</li>
+        <li class="services-list__item">Вихревые ванны</li>
+        <li class="services-list__item">Гальванизация</li>
+        <li class="services-list__item">Гальваногрязь</li>
+        <li class="services-list__item">Гидрокинезотерапия</li>
+        <li class="services-list__item">Гидромассаж</li>
+        <li class="services-list__item">Гинекологические процедуры</li>
+        <li class="services-list__item">Гормональные исследования</li>
+        <li class="services-list__item">Грязевые аппликации</li>
+        <li class="services-list__item">Грязевые вагинальные тампоны</li>
+        <li class="services-list__item">Грязевые обертывания</li>
+        <li class="services-list__item">Грязелечение</li>
+        <li class="services-list__item">Д'Арсонвализация</li>
+        <li class="services-list__item">ДДТ- терапия</li>
+        <li class="services-list__item">Десневые аппликации</li>
+        <li class="services-list__item">Десневые орошения</li>
+        <li class="services-list__item">Диетотерапия</li>
+        <li class="services-list__item">ДМВ-терапия</li>
+        <li class="services-list__item">Доплерография</li>
+        <li class="services-list__item">Иммунологические исследования</li>
+      </ul>
+
+      <h3 class="services-list__title">Врачи и специалисты</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Врач функциональной диагностики</li>
+        <li class="services-list__item">Гастроэнтеролог  </li>
+        <li class="services-list__item">Гинеколог</li>
+        <li class="services-list__item">Дермато-венеролог  </li>
+        <li class="services-list__item">Диетолог  </li>
+        <li class="services-list__item">Кардиолог  </li>
+        <li class="services-list__item">Мануальный терапевт  </li>
+        <li class="services-list__item">Невролог  </li>
+        <li class="services-list__item">Отоларинголог  </li>
+        <li class="services-list__item">Офтальмолог  </li>
+        <li class="services-list__item">Педиатр  </li>
+        <li class="services-list__item">Проктолог  </li>
+        <li class="services-list__item">Профпатолог  </li>
+        <li class="services-list__item">Психотерапевт  </li>
+        <li class="services-list__item">Пульмонолог  </li>
+        <li class="services-list__item">Стоматолог  </li>
+        <li class="services-list__item">Терапевт  </li>
+        <li class="services-list__item">Уролог  </li>
+        <li class="services-list__item">Физиотерапевт  </li>
+        <li class="services-list__item">Хирург  </li>
+        <li class="services-list__item">Эндокринолог  </li>
+        <li class="services-list__item">Эндоскопист  </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <section class="consultation mb-5">
+    <div class="container h-100 d-xl-flex align-items-xl-center">
+      <h2 class="consultation__title p-xl-0">Получить консультацию по лечению, кнопка</h2>
+      <a class="call-me mt-3 mt-xl-0 ml-xl-5" href="">Задать вопрос</a>
+    </div>
+  </section>
+  <div class="container">
+    <div class="services-list">
+      <h3 class="services-list__title">SPA-услуги</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Кедровая бочка </li>
+        <li class="services-list__item">Косметологический кабинет</li>
+        <li class="services-list__item">Купель</li>
+        <li class="services-list__item">Маски и массажи</li>
+        <li class="services-list__item">Пилинги и чистка</li>
+        <li class="services-list__item">Сауна</li>
+      </ul>
+
+      <h3 class="services-list__title">Бассейн</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Бассейн крытый с пресной водой</li>
+      </ul>
+
+      <h3 class="services-list__title">Питание</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">3-х разовое по системе «Шведский стол». </li>
+      </ul>
+
+      <h3 class="services-list__title">Услуги и Инфраструктура</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Банкомат</li>
+        <li class="services-list__item">Библиотека</li>
+        <li class="services-list__item">Бювет минеральной воды "Ессентуки 4"  </li>
+        <li class="services-list__item">Бювет минеральной воды "Славяновская"  </li>
+        <li class="services-list__item">Кафе  </li>
+        <li class="services-list__item">Лобби-бар  </li>
+        <li class="services-list__item">Магазин  </li>
+        <li class="services-list__item">Парковка </li>
+        <li class="services-list__item">Ресторан   </li>
+        <li class="services-list__item">Салон красоты  </li>
+        <li class="services-list__item">Room-service    </li>
+        <li class="services-list__item">Wi-Fi  </li>
+        <li class="services-list__item">Будильник  </li>
+        <li class="services-list__item">Гладильная комната  </li>
+        <li class="services-list__item">Сейфы  </li>
+        <li class="services-list__item">Экскурсионное бюро</li>
+      </ul>
+
+    </div>
+  </div>
+  <section class="consultation consultation--call mb-5">
+    <div class="container h-100 d-xl-flex align-items-xl-center">
+      <h2 class="consultation__title mb-xl-0 p-xl-0 mr-xl-5">Получить консультацию по лечению, кнопка</h2>
+      <a class="consultation__phone mr-xl-3" href="tel:+78043337320">8(804)333-73-20</a>
+      <span class="consultation__free-call">Звонок бесплатный</span>
+    </div>
+  </section>
+  <div class="container">
+    <div class="services-list">
+      <h3 class="services-list__title">Развлечения</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Арт-зал</li>
+        <li class="services-list__item">Аэрохокей </li>
+        <li class="services-list__item">Бильярд  </li>
+        <li class="services-list__item">Боулинг</li>
+        <li class="services-list__item">Дискотека</li>
+        <li class="services-list__item">Кино-концертный зал</li>
+        <li class="services-list__item">Компьютерные игры</li>
+        <li class="services-list__item">Концертно-развлекательные шоу-программы  </li>
+        <li class="services-list__item">Музыкальные вечера  </li>
+        <li class="services-list__item">Настольные игры</li>
+        <li class="services-list__item">Танцевальный зал  </li>
+        <li class="services-list__item">Творческие занятия  </li>
+
+      </ul>
+
+      <h3 class="services-list__title">Спорт</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Настольный теннис
+          </li>
+        <li class="services-list__item">Тренажерный зал    </li>
+      </ul>
+
+      <h3 class="services-list__title">Дети</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Детская комната
+
+
+        </li>
+        <li class="services-list__item"> Детская площадка    </li>
+        <li class="services-list__item">  С любого возраста </li>
+      </ul>
+
+      <h3 class="services-list__title">Конференц-услуги</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Конференц-зал</li>
+      </ul>
+
+      <h3 class="services-list__title">Достопримечательности поблизости</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">      Цветомузыкальный фонтан - 609 м (8 мин.)
+        </li>
+        <li class="services-list__item">      Усадьба Твалчрелидзе - 941 м (17 мин.)
+        </li>
+        <li class="services-list__item">      Лермонтовская площадка - 985 м (14 мин.)
+        </li>
+        <li class="services-list__item">      Нижний парк - 989 м (14 мин.)
+        </li>
+        <li class="services-list__item">      Колоннада - 1 км (15 мин.)
+        </li>
+        <li class="services-list__item">      Бювет источник №23 - 138 м (1 мин.)
+        </li>
+        <li class="services-list__item">      Бювет источник №5 - 523 м (8 мин.)
+        </li>
+        <li class="services-list__item">      Верхний парк - 2.7 км (55 мин.)
+        </li>
+
+        <li class="services-list__item">      Дельфинарий - 4 км (58 мин.)
+        </li>
+        <li class="services-list__item">      Филармония им. В.И. Сафонова - 670 м (13 мин.)
+        </li>
+        <li class="services-list__item">      Цирк им. Трахтенберга - 759 м (17 мин.)
+        </li>
+        <li class="services-list__item">      Свято-Никольский собор - 1.6 км (24 мин.)
+        </li>
+        <li class="services-list__item">      Аэропорт Минеральные Воды - 45.7 км (10 ч. 17 мин.)
+        </li>
+        <li class="services-list__item">      Ж/Д станция «Кисловодск» - 657 м (13 мин.)
+        </li>
+        <li class="services-list__item">      Автовокзал Кисловодск - 4.5 км (57 мин.)
+        </li>
+        <li class="services-list__item">      Кинотеатр «Союз» - 188 м (4 мин.)
+        </li>
+        <li class="services-list__item">      Дача Шаляпина - 729 м (17 мин.)
+        <li class="services-list__item">           Музей Крепость - 1.5 км (25 мин.)
+
+      </li>
+      </ul>
+
+
+    </div>
+
+    <section class="location d-xl-flex mb-5">
+      <h2 class="visually-hidden">Расположение</h2>
+      <div class="location__adress-wrapper">
+        <div class="location__adress">
+        <span class="location__title location__title--adress">Санаторий «Виктория» расположен
+по адресу:</span>
+          <span class="location__content">г. Кисловодск, ул. Кирова,12</span>
+        </div>
+        <div class="location__phone">
+          <span class="location__title location__title--phone">Телефоны для бронирования</span>
+          <a class="location__content" href="tel:+78043337320">8(804)333-73-20</a>
+          <a class="location__content" href="tel:+79148879696">8(918)887-96-96</a>
+        </div>
+      </div>
+
+      <div class="location__map ml-2 w-100">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f5615584ae5e96c7b0a010e0bd4a4131da2a7b0e961ee422da4f89753c1562c&amp;source=constructor" width="100%" height="336" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <section class="reservation mb-5">
+      <h2 class="reservation__title">Забронировать с гарантией лучшей цены  </h2>
+      <div class="reservation__form">
+        <div class="d-xl-flex flex-xl-nowrap justify-content-between">
+          <div class="input-wrapper">
+            <label for="arrivalNext" class="calc-form-select-title calc-form-select-title--date">
+              Дата заезда
+            </label>
+            <input id="arrivalNext" class="calc-form-input" type="text">
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="departureNext" class="calc-form-select-title calc-form-select-title--date">
+              Дата выезда
+            </label>
+            <input id="departureNext" class="calc-form-input" type="text">
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="day" class="calc-form-select-title calc-form-select-title--date">
+              Количество дней
+            </label>
+            <input id="day" class="calc-form-input" value="10" type="text">
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="adults2" class="calc-form-select-title calc-form-select-title--user">
+              Взрослые
+            </label>
+            <input type="number" id="adults2" class="calc-form-input calc-form-input--number" value="1">
+
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="kids2" class="calc-form-select-title calc-form-select-title--user">
+              Дети
+            </label>
+            <input type="number" id="kids2" class="calc-form-input calc-form-input--number" value="1">
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-xl-row align-items-xl-center mt-xl-3">
+          <input type="text" class="about-call-me mt-3" placeholder="ФИО">
+          <input type="text" class="about-call-me mt-3" placeholder="Телефон">
+          <input type="text" class="about-call-me mt-3" placeholder="E-mail">
+          <a class="button-main promo-button mt-3 ml-xl-auto" href="">Забронировать</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="managers mt-5">
+      <h2 class="visually-hidden">Менеджеры</h2>
+      <div class="managers__manager">
+        <div class="img-container">
+          <img src="img/manager1.jpg" alt="">
+        </div>
+        <div class="managers__manager-content">
+          <h3 class="managers__name">
+            Захарова Елена
+          </h3>
+          <span class="managers__status">менеджер Курортного центра</span>
+          <a class="managers__phone managers__phone--phone" href="tel:+78043337329">8(804)333-73-20</a>
+          <a class="managers__phone managers__phone--wa" href="https://api.whatsapp.com/send?phone=79188879696">8(918)887-96-96</a>
+          <a class="managers__email" href="mailto:">info@manager.ru</a>
+          <a class="call-me mt-3" href="">Перезвоните мне</a>
+        </div>
+
+      </div>
+      <div class="managers__manager">
+        <div class="img-container">
+          <img src="img/manager2.jpg" alt="">
+        </div>
+        <div class="managers__manager-content">
+          <h3 class="managers__name">
+            Захарова Елена
+          </h3>
+          <span class="managers__status">менеджер Курортного центра</span>
+          <a class="managers__phone managers__phone--phone" href="tel:+78043337329">8(804)333-73-20</a>
+          <a class="managers__phone managers__phone--wa" href="https://api.whatsapp.com/send?phone=79188879696">8(918)887-96-96</a>
+          <a class="managers__email" href="mailto:">info@manager.ru</a>
+          <a class="call-me mt-3" href="">Перезвоните мне</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="reviews__title mb-5">
+        Отзывы туристов, отдыхавших в Санатории Виктория
+      </h2>
+      <div class="d-xl-flex flex-xl-wrap">
+        <div class="reviews__review">
+          <span class="reviews__title">Отлично</span>
+          <span class="reviews__value">10.0</span>
+          <p class="reviews__user-info">Людмила (Индивидуальный путешественник). Дата отдыха с 05.10.2020 по 19.10.2020</p>
+          <p class="reviews__review-text">
+            Очень комфортный и современный санаторий
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--plus">
+            Расположение, питание медицинские услуги. И вообще все понравилось
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--minus">
+            Такового нет!!
+          </p>
+        </div>
+        <div class="reviews__review">
+          <span class="reviews__title">Отлично</span>
+          <span class="reviews__value">10.0</span>
+          <p class="reviews__user-info">Людмила (Индивидуальный путешественник). Дата отдыха с 05.10.2020 по 19.10.2020</p>
+          <p class="reviews__review-text">
+            Очень комфортный и современный санаторий
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--plus">
+            Расположение, питание медицинские услуги. И вообще все понравилось
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--minus">
+            Такового нет!!
+          </p>
+        </div>
+        <div class="reviews__review">
+          <span class="reviews__title">Отлично</span>
+          <span class="reviews__value">10.0</span>
+          <p class="reviews__user-info">Людмила (Индивидуальный путешественник). Дата отдыха с 05.10.2020 по 19.10.2020</p>
+          <p class="reviews__review-text">
+            Очень комфортный и современный санаторий
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--plus">
+            Расположение, питание медицинские услуги. И вообще все понравилось
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--minus">
+            Такового нет!!
+          </p>
+        </div>
+        <div class="reviews__review">
+          <span class="reviews__title">Отлично</span>
+          <span class="reviews__value">10.0</span>
+          <p class="reviews__user-info">Людмила (Индивидуальный путешественник). Дата отдыха с 05.10.2020 по 19.10.2020</p>
+          <p class="reviews__review-text">
+            Очень комфортный и современный санаторий
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--plus">
+            Расположение, питание медицинские услуги. И вообще все понравилось
+          </p>
+          <p class="reviews__plus-minus reviews__plus-minus--minus">
+            Такового нет!!
+          </p>
+        </div>
+      </div>
+
+      <a class="button-main promo-button mt-3 ml-xl-auto mr-xl-auto" href="">Еще отзывы</a>
+    </section>
+
+    <section class="other-object mt-5">
+      <span class="other-object__subtitle">Не понравился Санаторий Виктория?</span>
+      <h2 class="other-object__title mb-5">Посмотрите эти популярные санатории в городе
+        Кисловодск</h2>
+      <div class="d-xl-flex">
+        <div class="other-object__object">
+          <div class="img-container">
+            <img src="img/sanatory-moscow.jpg" alt="">
+          </div>
+          <h3 class="other-object__object-title">Санаторий Москва</h3>
+          <span class="other-object__rate">Отлично 8.3</span>
+          <span class="other-object__price">от 4999 руб</span>
+        </div>
+        <div class="other-object__object">
+          <div class="img-container">
+            <img src="img/sanatory-moscow.jpg" alt="">
+          </div>
+          <h3 class="other-object__object-title">Санаторий Москва</h3>
+          <span class="other-object__rate">Отлично 8.3</span>
+          <span class="other-object__price">от 4999 руб</span>
+        </div>
+        <div class="other-object__object">
+          <div class="img-container">
+            <img src="img/sanatory-moscow.jpg" alt="">
+          </div>
+          <h3 class="other-object__object-title">Санаторий Москва</h3>
+          <span class="other-object__rate">Отлично 8.3</span>
+          <span class="other-object__price">от 4999 руб</span>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="services-list">
+      <h3 class="services-list__title">Развлечения</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item">Арт-зал</li>
+        <li class="services-list__item">Аэрохокей </li>
+        <li class="services-list__item">Бильярд  </li>
+        <li class="services-list__item">Боулинг</li>
+        <li class="services-list__item">Дискотека</li>
+        <li class="services-list__item">Кино-концертный зал</li>
+        <li class="services-list__item">Компьютерные игры</li>
+        <li class="services-list__item">Концертно-развлекательные шоу-программы  </li>
+        <li class="services-list__item">Музыкальные вечера  </li>
+        <li class="services-list__item">Настольные игры</li>
+        <li class="services-list__item">Танцевальный зал  </li>
+        <li class="services-list__item">Творческие занятия  </li>
+
+      </ul>
+
+      <h3 class="services-list__title">Все санатории, пансионаты и отели Кисловодска</h3>
+      <ul class="services-list__list p-0 list-unstyled d-xl-flex flex-wrap mt-5">
+        <li class="services-list__item"><a class="services-list__link" href="">Арника Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Белая дача Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Виктория Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Вилла Арнест Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Арника Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Главные Нарзанные ванны Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Горького Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Джинал Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Димитрова Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Заря Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Кавказ Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Кирова Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Колос Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Крепость Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Кругозор Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Москва Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">МЧС России Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Нарзан Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Орджоникидзе Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Плаза Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Радуга Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Родник Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Семашко Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Смена Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Солнечный Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Узбекистан Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Целебный Нарзан Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Центросоюз Санаторий</a></li>
+        <li class="services-list__item"><a class="services-list__link" href="">Элита Санаторий</a></li>
+
+      </ul>
+
+      <a class="button-main promo-button mt-3 ml-xl-auto mr-xl-auto" href="">Показать все</a>
+    </div>
+
+    <section class="nearby-resorts mt-5">
+      <h2 class="neardy-resorts__title">Курорты рядом</h2>
+      <div class="d-xl-flex flex-xl-wrap justify-content-xl-between mt-4">
+        <div class="neardy-resorts__item">
+          <div class="neardy-resorts__img-block">
+            <img src="img/neardy/sanatory1.jpg" width="90" height="70" alt="">
+          </div>
+          <div class="neardy-resorts__desc">
+            <span class="neardy-resorts__city">Ессентуки</span>
+            <a class="neardy-resorts__link" href="">18 объектов размещения</a>
+          </div>
+        </div>
+        <div class="neardy-resorts__item">
+          <div class="neardy-resorts__img-block">
+            <img src="img/neardy/sanatory1.jpg" width="90" height="70" alt="">
+          </div>
+          <div class="neardy-resorts__desc">
+            <span class="neardy-resorts__city">Ессентуки</span>
+            <a class="neardy-resorts__link" href="">18 объектов размещения</a>
+          </div>
+        </div>
+        <div class="neardy-resorts__item">
+          <div class="neardy-resorts__img-block">
+            <img src="img/neardy/sanatory1.jpg" width="90" height="70" alt="">
+          </div>
+          <div class="neardy-resorts__desc">
+            <span class="neardy-resorts__city">Ессентуки</span>
+            <a class="neardy-resorts__link" href="">18 объектов размещения</a>
+          </div>
+        </div>
+        <div class="neardy-resorts__item">
+          <div class="neardy-resorts__img-block">
+            <img src="img/neardy/sanatory1.jpg" width="90" height="70" alt="">
+          </div>
+          <div class="neardy-resorts__desc">
+            <span class="neardy-resorts__city">Ессентуки</span>
+            <a class="neardy-resorts__link" href="">18 объектов размещения</a>
+          </div>
+        </div>
+        <div class="neardy-resorts__item">
+          <div class="neardy-resorts__img-block">
+            <img src="img/neardy/sanatory1.jpg" width="90" height="70" alt="">
+          </div>
+          <div class="neardy-resorts__desc">
+            <span class="neardy-resorts__city">Ессентуки</span>
+            <a class="neardy-resorts__link" href="">18 объектов размещения</a>
+          </div>
+        </div>
+        <div class="neardy-resorts__item">
+          <div class="neardy-resorts__img-block">
+            <img src="img/neardy/sanatory1.jpg" width="90" height="70" alt="">
+          </div>
+          <div class="neardy-resorts__desc">
+            <span class="neardy-resorts__city">Ессентуки</span>
+            <a class="neardy-resorts__link" href="">18 объектов размещения</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="other-object mt-5">
+      <h2 class="other-object__title mb-5">Последние просмотренные объекты</h2>
+      <div class="d-xl-flex">
+        <div class="other-object__object">
+          <div class="img-container">
+            <img src="img/sanatory-moscow.jpg" alt="">
+          </div>
+          <h3 class="other-object__object-title">Санаторий Москва</h3>
+          <span class="other-object__rate">Отлично 8.3</span>
+          <span class="other-object__price">от 4999 руб</span>
+        </div>
+        <div class="other-object__object">
+          <div class="img-container">
+            <img src="img/sanatory-moscow.jpg" alt="">
+          </div>
+          <h3 class="other-object__object-title">Санаторий Москва</h3>
+          <span class="other-object__rate">Отлично 8.3</span>
+          <span class="other-object__price">от 4999 руб</span>
+        </div>
+        <div class="other-object__object">
+          <div class="img-container">
+            <img src="img/sanatory-moscow.jpg" alt="">
+          </div>
+          <h3 class="other-object__object-title">Санаторий Москва</h3>
+          <span class="other-object__rate">Отлично 8.3</span>
+          <span class="other-object__price">от 4999 руб</span>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container d-xl-flex align-items-xl-center justify-content-xl-between">
+      <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+      <div class="footer__social">
+        <ul class="list-unstyled d-flex align-items-center mt-3">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--fb" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--insta" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--vk" href=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__mid">
+    <div class="container d-xl-flex">
+      <div>
+        <h3 class="footer__mid-title mb-3">
+          Контакты
+        </h3>
+        <div class="footer__contact-wrapper">
+          <a class="footer__contact footer__contact--tel" href="tel:+78043337320">8(804)333-73-20</a>
+          <a class="footer__contact" href="tel:+79188879696">8(918)887-96-96</a>
+          <a class="footer__contact mt-3 footer__contact--mail" href="mailto:mail@kurcenter.ru">mail@kurcenter.ru</a>
+        </div>
+      </div>
+      <div class="ml-xl-5">
+        <h3 class="footer__mid-title mb-3">
+          Популярные направления
+        </h3>
+        <ul class="list-unstyled d-xl-flex flex-xl-wrap">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Кисловодска</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Пятигорска</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Железноводска</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отели Анапы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Пансионаты Сочи</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Гостиницы Геленджика</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отели Красной поляны</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Крыму</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Ялты</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Пансионаты Евпатории</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Алуште</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Абхазии</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Белокурихи</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Подмосковье</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Белоруссии</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="footer__bottom d-none d-xl-block">
+    <div class="container">
+      <ul class="list-unstyled d-flex m-0">
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Контакты</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Личный кабинет</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Поиск отеля по услугам</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Поиск АвиаБилетов</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Партнерская программа</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Оплата</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Карта сайта</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Политика обработки персональных данных</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!--   <script src="js/jquery.inputmask.js"></script>-->
+   <script src="js/menu.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+   <script>
+
+     $.datepicker.regional['ru'] = {
+       closeText: 'Закрыть',
+       prevText: 'Предыдущий',
+       nextText: 'Следующий',
+       currentText: 'Сегодня',
+       monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+       monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+       dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+       dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+       dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+       weekHeader: 'Не',
+       dateFormat: 'dd.mm.yy',
+       firstDay: 1,
+       isRTL: false,
+       showMonthAfterYear: false,
+       yearSuffix: ''
+     };
+     $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+     $(function() {
+       $( "#arrival, #departure, #arrivalNext, #departureNext" ).datepicker({ dateFormat: 'd-M' });
+       $( "#arrival, #departure, #arrivalNext, #departureNext" ).datepicker( "setDate", new Date());
+     });
+
+     // $('#arrivalNext').datepicker({
+     //   //comment the beforeShow handler if you want to see the ugly overlay
+     //   beforeShow: function() {
+     //     setTimeout(function(){
+     //       $('.ui-datepicker').css('z-index', 1000000);
+     //     }, 0);
+     //   }
+     // });
+
+   </script>
+
+<script>
+  $(window).load(function() {
+    // The slider being synced must be initialized first
+    $('#carousel').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      itemWidth: 60,
+      itemMargin: 20,
+      asNavFor: '#slider',
+      prevText: "",           //String: Set the text for the "previous" directionNav item
+      nextText: "",
+    });
+
+    $('#slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      sync: "#carousel",
+      prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+      nextText: "Next",
+    });
+  });
+</script>
+</body>
+</html>

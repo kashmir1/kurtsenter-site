@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Курцентр</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Курцентр">
+  <meta name="Keywords" content="Курцентр">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+<!--    <link rel="stylesheet" href="css/style.min.css">-->
+</head>
+<!--Хедер-->
+<body>
+
+<header class="header header--small">
+  <div class="container-fluid header-navbar header-navbar--small">
+    <div class="header-container d-xl-flex justify-content-xl-between align-items-xl-center">
+      <div class="header-wrapper">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+        <a href="" class="open-menu hamb-icon d-xl-none"></a>
+      </div>
+      <nav class="main-nav mr-xl-auto ml-xl-5">
+        <div class="nav-list d-none d-xl-flex align-items-xl-center">
+          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Выбрать курорт +</a>
+            <ul class="subnav d-none">
+              <li class="subnav-item">
+                <a href="">
+                  <span class="text-danger">Кавказские Минеральные Воды</span></a>
+              </li>
+              <li>
+                <a href="">
+                  Кисловодск</a>
+              </li>
+              <li>
+                <a href="">
+                  Ессентуки</a>
+              </li>
+              <li>
+                <a href="">
+                  Пятигорск</a>
+              </li>
+              <li>
+                <a href="">
+                  Железноводск</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Акции +</a>
+            <ul class="subnav d-none">
+              <li class="subnav-item">
+                <a href="">
+                  <span class="text-danger">Акции</span></a>
+              </li>
+              <li>
+                <a href="">
+                  Кисловодск</a>
+              </li>
+              <li>
+                <a href="">
+                  Ессентуки</a>
+              </li>
+              <li>
+                <a href="">
+                  Пятигорск</a>
+              </li>
+              <li>
+                <a href="">
+                  Железноводск</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item"><a class="nav-link" href="">Подобрать отель по услугам</a></div>
+          <div class="nav-item"><a class="nav-link" href="">Оплатить</a></div>
+
+          <div class="header-contact">
+            <a class="header-contact-link header-phone" href="tel:+78043337320">8(804)333-73-20</a>
+            <a class="header-contact-link header-wa" href="https://api.whatsapp.com/send?phone=79188879696">8(918)887-96-96</a>
+          </div>
+
+          <div class="header-user-links">
+            <a class="header-user-link header__user-link--user" href="">
+
+            </a>
+            <a class="header-user-link header__user-link--search" onclick="openSearch(event)" href="">
+
+            </a>
+            <a class="header-user-link header__user-link--favorites" href="">
+
+            </a>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+
+
+  </div>
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+    <div class="overlay-content">
+      <form action="">
+        <input type="text" placeholder="Поиск.." name="search">
+        <button type="submit"><i class="fa fa-search">Найти</i></button>
+      </form>
+    </div>
+  </div>
+</header>
+
+
+<main class="main-page">
+  <section class="promo__small promo__small--city mb-5">
+
+
+    <div class="container">
+      <div class="promo-content promo-content--small">
+        <h1 class="promo__title--small mt-xl-0">
+          Курорты Кавказских Минеральных Вод
+        </h1>
+        <ul class="list-unstyled breadcrumb">
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="">Главная</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="">Кавказские Минеральные Воды</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="container">
+    <p class="">
+      Компания "Курортый центр" является туроператором по курортам Кавказских Минеральных Вод с 2007 года. Путевки на курорты Кавказских Минеральных Вод предоставляются по официальным ценам санаториев, пансионатов и отелей. На сегодняшний день - 31.10.2020, мы работаем с 86 объектами размещения (70 санаториев, 7 пансионатов, 9 отелей) в Кавказских Минеральных Водах. Актуальную информацию по услугам и официальным ценам на 2020-2021 год Вы найдете кликнув на ссылку города ниже:
+    </p>
+    <section class="regions">
+      <h2 class="visually-hidden">Регионы</h2>
+      <div class="regions__list">
+        <div class="regions__item">
+          <div class="img-container">
+            <img src="img/kislovodsk-region.jpg" alt="">
+          </div>
+          <div class="regions__title">
+            <div>
+              <span>Кисловодск</span>
+              <ul class="regions__places list-unstyled">
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">28 санаториев</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">5 пансионатов</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">9 отелей</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="regions__item">
+          <div class="img-container">
+            <img src="img/kislovodsk-region.jpg" alt="">
+          </div>
+          <div class="regions__title">
+            <div>
+              <span>Кисловодск</span>
+              <ul class="regions__places list-unstyled">
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">28 санаториев</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">5 пансионатов</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">9 отелей</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="regions__item">
+          <div class="img-container">
+            <img src="img/kislovodsk-region.jpg" alt="">
+          </div>
+          <div class="regions__title">
+            <div>
+              <span>Кисловодск</span>
+              <ul class="regions__places list-unstyled">
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">28 санаториев</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">5 пансионатов</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">9 отелей</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="regions__item">
+          <div class="img-container">
+            <img src="img/kislovodsk-region.jpg" alt="">
+          </div>
+          <div class="regions__title">
+            <div>
+              <span>Кисловодск</span>
+              <ul class="regions__places list-unstyled">
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">28 санаториев</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">5 пансионатов</a>
+                </li>
+                <li class="regions__places-item">
+                  <a class="regions__link" href="">9 отелей</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation mb-5">
+      <h2 class="reservation__title">Не можете выбрать? Мы поможем подобрать тур</h2>
+      <div class="reservation__form">
+        <div class="d-xl-flex flex-xl-nowrap justify-content-between">
+          <div class="input-wrapper">
+            <label for="arrivalNext" class="calc-form-select-title calc-form-select-title--date">
+              Дата заезда
+            </label>
+            <input id="arrivalNext" class="calc-form-input hasDatepicker" type="text">
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="departureNext" class="calc-form-select-title calc-form-select-title--date">
+              Дата выезда
+            </label>
+            <input id="departureNext" class="calc-form-input hasDatepicker" type="text">
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="day" class="calc-form-select-title calc-form-select-title--date">
+              Количество дней
+            </label>
+            <input id="day" class="calc-form-input" value="10" type="text">
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="adults2" class="calc-form-select-title calc-form-select-title--user">
+              Взрослые
+            </label>
+            <input type="number" id="adults2" class="calc-form-input calc-form-input--number" value="1">
+
+          </div>
+          <div class="input-wrapper mt-3 mt-xl-0">
+            <label for="kids2" class="calc-form-select-title calc-form-select-title--user">
+              Дети
+            </label>
+            <input type="number" id="kids2" class="calc-form-input calc-form-input--number" value="1">
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-xl-row align-items-xl-center mt-xl-3">
+          <div class="w-100 mr-xl-3">
+            <div class="d-xl-flex justify-content-xl-between">
+              <input type="text" class="about-call-me mt-3 w-100" placeholder="ФИО">
+              <input type="text" class="about-call-me mt-3 w-100" placeholder="Телефон">
+              <input type="text" class="about-call-me mt-3 mr-xl-0 w-100" placeholder="E-mail">
+            </div>
+            <textarea name="" id="" class="input-textares mt-3"></textarea>
+          </div>
+
+          <a class="button-main promo-button mt-3 ml-xl-auto" href="">Забронировать</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="popular mb-5">
+      <h2 class="mb-5"> Популярные отели в Кисловодске</h2>
+      <div class="popular__list">
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="popular mb-5">
+      <h2 class="mb-5"> Популярные отели в Пятигорске</h2>
+      <div class="popular__list">
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="consultation consultation--call mb-5">
+    <div class="container h-100 d-xl-flex align-items-xl-center">
+      <h2 class="consultation__title mb-xl-0 p-xl-0 mr-xl-5">Забронируйте по телефону
+        или оставьте заявку  </h2>
+      <div class="d-flex flex-column">
+        <a class="consultation__phone mr-xl-3" href="tel:+78043337320">8(804)333-73-20</a>
+        <span class="consultation__free-call">Звонок бесплатный</span>
+      </div>
+      <a class="call-me mt-3 mt-xl-0 ml-xl-5" href="">Оставить заявку</a>
+
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="popular mb-5">
+      <h2 class="mb-5"> Популярные отели в Кисловодске</h2>
+      <div class="popular__list">
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="popular mb-5">
+      <h2 class="mb-5"> Популярные отели в Пятигорске</h2>
+      <div class="popular__list">
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+        <div class="popular__item">
+          <div class="img-container">
+            <img src="img/villa.jpg" alt="">
+          </div>
+          <h3 class="popular__title">Санаторий Вилла Арнест</h3>
+          <a class="popular__link" href="">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <div class="services-list">
+      <h2 class="mb-5">Выберете предпочетаемый курорт</h2>
+
+      <div class="d-xl-flex">
+        <div>
+          <h3 class="services-list__subtitle">Кавказские Минеральные Воды</h3>
+          <ul class="services-list__list list-unstyled">
+            <li class="services-list__item"><a class="services-list__link" href="">Кисловодск</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Ессентуки</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Пятигорск</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Железноводск</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="services-list__subtitle">Краснодарский край</h3>
+          <ul class="services-list__list list-unstyled">
+            <li class="services-list__item"><a class="services-list__link" href="">Анапа</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Геленджик</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Туапсе</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Сочи</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Красная поляна</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="services-list__subtitle">Крым</h3>
+          <ul class="services-list__list list-unstyled">
+            <li class="services-list__item"><a class="services-list__link" href="">Ялта</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Судак</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Феодосия</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Алушта</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Евпатория</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Саки</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Севастополь</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="services-list__subtitle">Абхазия</h3>
+          <ul class="services-list__list list-unstyled">
+            <li class="services-list__item"><a class="services-list__link" href="">Пицунта</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Гагра</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Гудаута</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Новый Афон</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Сухум</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Очамчира</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-xl-flex mt-5">
+        <div>
+          <h3 class="services-list__subtitle">Беларусь</h3>
+          <ul class="services-list__list list-unstyled">
+            <li class="services-list__item"><a class="services-list__link" href="">Витебская область</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Минская область</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Брестская область</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Могилевская область</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Гродненская область</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Гомельская область</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="services-list__subtitle">Алтайский край</h3>
+          <ul class="services-list__list list-unstyled">
+            <li class="services-list__item"><a class="services-list__link" href="">Белокуриха</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="services-list__subtitle">Центральная Россия</h3>
+          <ul class="services-list__list list-unstyled">
+            <li class="services-list__item"><a class="services-list__link" href="">Тульская область</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Московская область</a></li>
+            <li class="services-list__item"><a class="services-list__link" href="">Рязанская область</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container d-xl-flex align-items-xl-center justify-content-xl-between">
+      <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+      <div class="footer__social">
+        <ul class="list-unstyled d-flex align-items-center mt-3">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--fb" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--insta" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--vk" href=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__mid">
+    <div class="container d-xl-flex">
+      <div>
+        <h3 class="footer__mid-title mb-3">
+          Контакты
+        </h3>
+        <div class="footer__contact-wrapper">
+          <a class="footer__contact footer__contact--tel" href="tel:+78043337320">8(804)333-73-20</a>
+          <a class="footer__contact" href="tel:+79188879696">8(918)887-96-96</a>
+          <a class="footer__contact mt-3 footer__contact--mail" href="mailto:mail@kurcenter.ru">mail@kurcenter.ru</a>
+        </div>
+      </div>
+      <div class="ml-xl-5">
+        <h3 class="footer__mid-title mb-3">
+          Популярные направления
+        </h3>
+        <ul class="list-unstyled d-xl-flex flex-xl-wrap">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Кисловодска</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Пятигорска</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Железноводска</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отели Анапы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Пансионаты Сочи</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Гостиницы Геленджика</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отели Красной поляны</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Крыму</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Ялты</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Пансионаты Евпатории</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Алуште</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Абхазии</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Белокурихи</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Отдых в Подмосковье</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="">Санатории Белоруссии</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="footer__bottom d-none d-xl-block">
+    <div class="container">
+      <ul class="list-unstyled d-flex m-0">
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Контакты</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Личный кабинет</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Поиск отеля по услугам</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Поиск АвиаБилетов</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Партнерская программа</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Оплата</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Карта сайта</a>
+        </li>
+        <li class="footer__bottom-item">
+          <a class="footer__bottom-link" href="">Политика обработки персональных данных</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!--   <script src="js/jquery.inputmask.js"></script>-->
+   <script src="js/menu.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+   <script>
+
+     $.datepicker.regional['ru'] = {
+       closeText: 'Закрыть',
+       prevText: 'Предыдущий',
+       nextText: 'Следующий',
+       currentText: 'Сегодня',
+       monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+       monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+       dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+       dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+       dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+       weekHeader: 'Не',
+       dateFormat: 'dd.mm.yy',
+       firstDay: 1,
+       isRTL: false,
+       showMonthAfterYear: false,
+       yearSuffix: ''
+     };
+     $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+     $(function() {
+       $( "#arrival, #departure, #arrivalNext, #departureNext" ).datepicker({ dateFormat: 'd-M' });
+       $( "#arrival, #departure, #arrivalNext, #departureNext" ).datepicker( "setDate", new Date());
+     });
+
+     // $('#arrivalNext').datepicker({
+     //   //comment the beforeShow handler if you want to see the ugly overlay
+     //   beforeShow: function() {
+     //     setTimeout(function(){
+     //       $('.ui-datepicker').css('z-index', 1000000);
+     //     }, 0);
+     //   }
+     // });
+
+   </script>
+
+<script>
+  $(window).load(function() {
+    // The slider being synced must be initialized first
+    $('#carousel').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      itemWidth: 60,
+      itemMargin: 20,
+      asNavFor: '#slider',
+      prevText: "",           //String: Set the text for the "previous" directionNav item
+      nextText: "",
+    });
+
+    $('#slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      sync: "#carousel",
+      prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+      nextText: "Next",
+    });
+  });
+</script>
+</body>
+</html>
