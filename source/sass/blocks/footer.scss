@@ -121,7 +121,7 @@
 .footer__nav-item {
   font-size: 16px;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     width: 280px;
     margin-bottom: 20px;
   }

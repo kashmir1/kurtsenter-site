@@ -97,7 +97,7 @@
   flex-direction: column;
   border-bottom: 2px solid #dddddd;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     border-right: 2px solid #dddddd;
     border-bottom: 0;
     width: 240px;
@@ -105,6 +105,15 @@
     padding-right: 20px;
     white-space: nowrap;
   }
+
+  //@include media-breakpoint-up(xl) {
+  //  border-right: 2px solid #dddddd;
+  //  border-bottom: 0;
+  //  width: 240px;
+  //  margin-right: 20px;
+  //  padding-right: 20px;
+  //  white-space: nowrap;
+  //}
 
 }
 

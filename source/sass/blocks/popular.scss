@@ -1,5 +1,5 @@
 .popular__list {
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -7,6 +7,15 @@
 
 .popular__item {
   margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    width: 210px;
+    margin-right: 20px;
+
+    &:nth-of-type(6n) {
+      margin-right: 0;
+    }
+  }
 
   @include media-breakpoint-up(xl) {
     width: 220px;

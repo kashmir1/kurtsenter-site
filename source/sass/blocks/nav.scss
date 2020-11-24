@@ -51,6 +51,14 @@
   font-size: 18px;
   padding-left: 0;
 
+  @include media-breakpoint-up(md) {
+   font-size: 14px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+  }
+
   &:hover {
     color: $white;
     text-decoration: underline;
@@ -60,10 +68,10 @@
 .subnav {
   color: $white;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     position: absolute;
     width: 300px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     list-style: none;
   }

@@ -29,7 +29,7 @@ $mobile-width: 979px;
 @import "global/font.scss";
 @import "global/variables";
 @import "global/mixins.scss";
-@import "global/flexslider.css";
+@import "global/flexslider";
 @import "global/flexslider-rtl.css";
 
 @import "blocks/header";
@@ -63,3 +63,4 @@ $mobile-width: 979px;
 @import "blocks/recently-view";
 @import "blocks/about-main";
 @import "blocks/advantages";
+@import "blocks/blog";
