@@ -9,7 +9,7 @@
   align-items: center;
   margin-bottom: 40px;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     width: 435px;
   }
 }

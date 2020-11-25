@@ -14,7 +14,7 @@
 
 .calc-form-content {
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     display: flex;
     align-items: center;
   }

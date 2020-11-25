@@ -1,12 +1,21 @@
 .managers {
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
   }
 
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    justify-content: space-between;
+  }
   .img-container {
     border-radius: 10px;
+
+    @include media-breakpoint-up(md) {
+      width: 250px;
+      height: 250px;
+    }
 
     @include media-breakpoint-up(xl) {
       width: 286px;
@@ -20,7 +29,7 @@
   flex-direction: column;
   margin-bottom: 20px;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     flex-direction: row;
   }
 }
@@ -28,7 +37,7 @@
 .managers__manager-content {
   display: flex;
   flex-direction: column;
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     margin-left: 45px;
   }
 }

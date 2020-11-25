@@ -1,13 +1,13 @@
 .rooms-title {
   text-align: center;
   font-size: 40px;
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     font-size: 50px;
   }
 }
 
 .rooms__wrapper {
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -19,6 +19,15 @@
   box-shadow: 0px 0px 16px 0px rgba(180,179,179,0.37);
   padding-bottom: 20px;
   margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    width: 335px;
+    margin-right: 10px;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
 
   @include media-breakpoint-up(xl) {
     width: 347px;

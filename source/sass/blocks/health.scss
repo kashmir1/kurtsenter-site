@@ -8,7 +8,7 @@
   border-bottom: 1px solid #e1ebfe;
   margin-bottom: 25px;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
     align-items: center;
