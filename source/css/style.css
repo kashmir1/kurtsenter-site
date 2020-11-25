@@ -8077,7 +8077,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 28px; }
   @media (min-width: 1440px) {
     .consultation__phone {
-      font-size: 48px; } }
+      font-size: 40px; } }
+  @media (min-width: 1480px) {
+    .consultation__phone {
+      font-size: 40px; } }
   .consultation__phone:hover {
     color: #ffffff; }
 
