@@ -31,9 +31,9 @@
 .consultation__phone {
   @include commissioner-font;
   color: #ffffff;
-  font-size: 38px;
+  font-size: 28px;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     font-size: 48px;
   }
 

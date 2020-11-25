@@ -133,7 +133,11 @@
 }
 
 .promo-button {
-  width: 250px;
+  width: 100%;
   height: 70px;
   margin-top: 60px;
+
+  @include media-breakpoint-up(md) {
+    width: 250px;
+  }
 }
