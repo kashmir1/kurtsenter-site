@@ -23,19 +23,6 @@ var addSubmenuClickListener = function (subMenuItem, subList) {
   subMenuItem.addEventListener('click', function (evt) {
     evt.preventDefault();
     subList.classList.toggle('d-block');
-    // if (!subList.classList.contains('d-block')) {
-    //   subList.classList.remove('d-block')
-    // } else {
-    //
-    // }
-    // subList.classList.add('d-none');
-    // if (!subList.classList.contains('d-none')) {
-    //   subList.classList.add('d-none');
-    //   subList.classList.remove('d-block')
-    // } else {
-    //   subList.classList.remove('d-none');
-    //   subList.classList.add('d-block');
-    // }
   })
 };
 

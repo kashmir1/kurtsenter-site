@@ -775,7 +775,6 @@
 
 <!--   <script src="js/jquery.inputmask.js"></script>-->
    <script src="js/menu.js"></script>
-<script src="js/jquery.flexslider.js"></script>
 
    <script>
 
@@ -803,42 +802,8 @@
        $( "#arrival, #departure, #arrivalNext, #departureNext" ).datepicker( "setDate", new Date());
      });
 
-     // $('#arrivalNext').datepicker({
-     //   //comment the beforeShow handler if you want to see the ugly overlay
-     //   beforeShow: function() {
-     //     setTimeout(function(){
-     //       $('.ui-datepicker').css('z-index', 1000000);
-     //     }, 0);
-     //   }
-     // });
-
    </script>
 
-<script>
-  $(window).load(function() {
-    // The slider being synced must be initialized first
-    $('#carousel').flexslider({
-      animation: "slide",
-      controlNav: false,
-      animationLoop: false,
-      slideshow: false,
-      itemWidth: 60,
-      itemMargin: 20,
-      asNavFor: '#slider',
-      prevText: "",           //String: Set the text for the "previous" directionNav item
-      nextText: "",
-    });
 
-    $('#slider').flexslider({
-      animation: "slide",
-      controlNav: false,
-      animationLoop: false,
-      slideshow: false,
-      sync: "#carousel",
-      prevText: "Previous",           //String: Set the text for the "previous" directionNav item
-      nextText: "Next",
-    });
-  });
-</script>
 </body>
 </html>
