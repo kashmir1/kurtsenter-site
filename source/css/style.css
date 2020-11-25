@@ -5845,7 +5845,7 @@ h2 {
   font-family: 'Commissioner', Verdana, sans-serif;
   font-size: 30px;
   color: #283a5e; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     h2 {
       font-size: 40px; } }
 
@@ -5854,7 +5854,7 @@ h3 {
   font-size: 25px;
   color: #283a5e;
   font-weight: bold; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     h3 {
       font-size: 30px; } }
 
@@ -5910,7 +5910,7 @@ h4 {
   font-size: 16px;
   padding-right: 110px;
   height: 65px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .call-me {
       font-size: 20px; } }
   .call-me:hover {
@@ -5936,7 +5936,7 @@ h4 {
 
 .container {
   max-width: 1420px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .container {
       padding: 0;
       max-width: 1420px; } }
@@ -6270,7 +6270,7 @@ html[xmlns] .flexslider .slides {
 
 .header-navbar {
   background-color: rgba(0, 0, 0, 0.8); }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .header-navbar {
       background-color: rgba(0, 0, 0, 0.4); } }
 
@@ -6279,18 +6279,18 @@ html[xmlns] .flexslider .slides {
 
 .header-container {
   padding: 30px 10px; }
-  @media (min-width: 1190px) {
+  @media (min-width: 1440px) {
     .header-container {
       padding-left: 10px;
       padding-right: 10px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .header-container {
       padding-left: 100px;
       padding-right: 100px; } }
 
 .logo {
   width: 180px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .logo {
       width: 260px; } }
 
@@ -6329,7 +6329,7 @@ html[xmlns] .flexslider .slides {
       font-size: 14px;
       margin-right: 25px;
       margin-bottom: 0; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .header-contact-link {
       margin-right: 25px;
       font-size: 20px; } }
@@ -6379,7 +6379,7 @@ html[xmlns] .flexslider .slides {
   @media (min-width: 1190px) {
     .header-user-links {
       margin-left: 30px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .header-user-links {
       margin-left: 0; } }
 
@@ -6496,13 +6496,13 @@ html[xmlns] .flexslider .slides {
 
 .open-menu {
   position: relative; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .open-menu {
       display: none; } }
 
 .hamb-icon {
   position: relative; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .hamb-icon {
       display: none; } }
   .hamb-icon::before {
@@ -6518,7 +6518,7 @@ html[xmlns] .flexslider .slides {
 
 .close-icon {
   position: relative; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .close-icon {
       display: none; } }
   .close-icon::before {
@@ -6537,7 +6537,7 @@ html[xmlns] .flexslider .slides {
   @media (min-width: 1190px) {
     .nav-link {
       font-size: 14px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .nav-link {
       font-size: 18px; } }
   .nav-link:hover {
@@ -7381,7 +7381,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #394968; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .footer__top {
       padding-top: 30px;
       padding-bottom: 30px; } }
@@ -7705,7 +7705,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   z-index: 1000;
   position: relative;
   padding: 20px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .calc-form {
       padding: 50px 60px; } }
 
@@ -7722,7 +7722,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: 'Commissioner', Verdana, sans-serif;
   font-size: 30px;
   color: #283a5e; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .calc-form-title {
       font-size: 40px; } }
 
@@ -7766,7 +7766,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: url("../img/drop.svg") no-repeat;
   background-position: 99%;
   background-size: 17px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .calc-form-input {
       font-size: 40px; } }
   .calc-form-input::-webkit-input-placeholder {
@@ -7839,7 +7839,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-right: 10px; }
       .rooms-item:nth-of-type(4n) {
         margin-right: 0; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .rooms-item {
       width: 347px;
       margin-right: 10px; }
@@ -7929,7 +7929,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       font-size: 19px;
       width: 300px;
       margin-right: 30px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .services-list__item {
       width: 320px; } }
   .services-list__item::before {
@@ -7941,7 +7941,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 4px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat; }
-    @media (min-width: 1440px) {
+    @media (min-width: 1480px) {
       .services-list__item::before {
         top: 8px; } }
 
@@ -7989,7 +7989,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: 'Commissioner', Verdana, sans-serif;
   color: #ffffff;
   font-size: 38px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .consultation__phone {
       font-size: 48px; } }
   .consultation__phone:hover {
@@ -8094,10 +8094,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .reservation {
   background-color: #12b1ee;
   padding: 20px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .reservation {
       padding: 40px 35px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .reservation .about-call-me {
       width: 300px;
       height: 65px;
@@ -8107,11 +8107,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #ffffff;
   font-size: 30px;
   font-family: 'Commissioner', Verdana, sans-serif; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .reservation__title {
       font-size: 40px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1480px) {
   .city-sanatoryes__rate-wrapper {
     padding-left: 25px; } }
 
@@ -8137,7 +8137,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         -ms-flex-pack: justify;
             justify-content: space-between; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1480px) {
   .managers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8152,7 +8152,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .managers .img-container {
       width: 250px;
       height: 250px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .managers .img-container {
       width: 286px;
       height: 286px; } }
@@ -8271,7 +8271,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .reviews__review {
       width: 660px;
       margin-right: 30px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .reviews__review {
       width: 680px;
       margin-right: 30px; } }
@@ -8330,7 +8330,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .other-object__title {
   color: #283a5e;
   font-size: 30px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .other-object__title {
       font-size: 50px; } }
 
@@ -8439,7 +8439,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         height: 120px;
         margin-right: 20px;
         margin-bottom: 0; } }
-  @media (min-width: 1190px) and (min-width: 1440px) {
+  @media (min-width: 1190px) and (min-width: 1480px) {
     .city-sanatoryes__item .img-container {
       width: 143px;
       height: 143px; } }
@@ -8450,7 +8450,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-right: 30px;
     border-right: 1px solid #e6e6e6; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1480px) {
   .city-sanatoryes__item-wrapper {
     width: 640px;
     padding-right: 30px;
@@ -8477,7 +8477,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 18px; }
   @media (min-width: 1190px) {
     .city-sanatoryes__desc {
-      margin: 0; } }
+      margin: 0;
+      overflow: hidden; } }
+
+@media (min-width: 1190px) {
+  .city-sanatoryes__desc {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; } }
 
 .city-sanatoryes__rate-wrapper {
   display: -webkit-box;
@@ -8494,8 +8502,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
               justify-content: center;
       padding-right: 20px;
       border-right: 1px solid #e6e6e6;
-      height: 144px;
-      margin-right: 20px; } }
+      margin-right: 20px;
+      padding-left: 20px; } }
 
 .city-sanatoryes_rate {
   display: inline-block;
@@ -8552,7 +8560,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 10px;
   color: #8b8b8b; }
 
-@media (min-width: 1440px) {
+.city-sanatoryes__button {
+  height: 60px; }
+
+@media (min-width: 1480px) {
   .regions__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8570,7 +8581,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   margin-bottom: 30px;
   overflow: hidden; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .regions__item {
       height: 260px;
       width: 680px;
@@ -8608,7 +8619,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 25px;
   min-height: 60px;
   background-color: rgba(255, 255, 255, 0.8); }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .regions__title {
       padding-bottom: 20px;
       margin: auto auto 0;
@@ -8626,7 +8637,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       font-size: 14px; }
-      @media (min-width: 1440px) {
+      @media (min-width: 1480px) {
         .regions__title:hover .regions__places {
           margin-bottom: 0; } }
 
@@ -8638,7 +8649,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #727171;
   font-size: 12px;
   text-decoration: underline; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .regions__link {
       font-size: 18px; } }
   .regions__link:hover {
@@ -8661,7 +8672,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-right: 20px; }
       .popular__item:nth-of-type(6n) {
         margin-right: 0; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .popular__item {
       width: 220px;
       margin-right: 20px; }
@@ -8707,7 +8718,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-right: 30px; }
       .resort-choose__item:nth-of-type(4n) {
         margin-right: 0; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .resort-choose__item {
       width: 370px;
       margin-right: 30px; }
@@ -8727,7 +8738,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .resort__item--big:nth-of-type(3n) {
       margin-right: 0; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1480px) {
   .resort__item--big {
     width: 498px;
     margin-right: 30px; }
@@ -8891,7 +8902,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .advantages__item {
       width: 260px;
       margin-right: 30px; }
@@ -8978,7 +8989,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .blog__item {
       width: 400px;
       margin-bottom: 40px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1480px) {
     .blog__item {
       width: 420px;
       margin-bottom: 40px; } }

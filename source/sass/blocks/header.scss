@@ -24,7 +24,7 @@
 .header-container {
   padding: 30px 10px;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     padding-left: 10px;
     padding-right: 10px;
   }

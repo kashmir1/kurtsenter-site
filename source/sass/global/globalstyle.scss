@@ -13,8 +13,8 @@ $grid-breakpoints: (
         xs: 0,
         sm: 576px,
         md: 1190px,  //before 768px
-        lg: 1220px,  //before 992px
-        xl: 1440px
+        lg: 1440px,  //before 992px
+        xl: 1480px
 );
 
 
@@ -26,8 +26,8 @@ $grid-breakpoints: (
 $container-max-widths: (
         sm: 540px,
         md: 1150px,
-        lg: 1200px, //before 978px
-        xl: 1420px
+        lg: 1400px, //before 978px
+        xl: 1460px
 );
 
 //Миксины для шрифтов
