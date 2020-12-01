@@ -50,6 +50,9 @@
   color: $white;
   font-size: 18px;
   padding-left: 0;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  outline: 0;
 
   @include media-breakpoint-up(md) {
    font-size: 14px;

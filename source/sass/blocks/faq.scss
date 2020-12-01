@@ -1,5 +1,6 @@
 .faq__list {
-  @include media-breakpoint-up(lg) {
+
+  @include media-breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;

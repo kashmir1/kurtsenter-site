@@ -10,10 +10,9 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
 <!--    <link rel="stylesheet" href="css/style.min.css">-->
@@ -30,25 +29,26 @@
       </div>
       <nav class="main-nav mr-xl-auto ml-xl-5">
         <div class="nav-list d-none d-xl-flex align-items-xl-center">
-          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Выбрать курорт +</a>
-            <ul class="subnav d-none">
-              <li class="subnav-item">
+          <div class="nav-item btn-group">
+            <button type="button" class="nav-link nav-item-drop dropdown-toggle">Выбрать курорт +</button>
+            <ul class="subnav dropdown-menu">
+              <li class="subnav-item dropdown-item">
                 <a href="">
                   <span class="text-danger">Кавказские Минеральные Воды</span></a>
               </li>
-              <li>
+              <li class="dropdown-item">
                 <a href="">
                   Кисловодск</a>
               </li>
-              <li>
+              <li class="dropdown-item">
                 <a href="">
                   Ессентуки</a>
               </li>
-              <li>
+              <li class="dropdown-item">
                 <a href="">
                   Пятигорск</a>
               </li>
-              <li>
+              <li class="dropdown-item">
                 <a href="">
                   Железноводск</a>
               </li>
@@ -650,9 +650,9 @@
 
         <div class="d-flex flex-column flex-xl-row align-items-xl-center mt-xl-3">
           <input type="text" class="about-call-me mt-3 w-100" placeholder="ФИО">
-          <input type="text" class="about-call-me mt-3 w-100 placeholder="Телефон">
+          <input type="text" class="about-call-me mt-3 w-100" placeholder="Телефон">
           <input type="text" class="about-call-me mt-3 w-100" placeholder="E-mail">
-          <a class="button-main promo-button mt-3 ml-xl-auto" href="">Забронировать</a>
+          <a class="button-main promo-button mt-3 pl-md-3 pr-md-3 ml-xl-auto" href="">Забронировать</a>
         </div>
 
       </div>
@@ -1064,6 +1064,7 @@
 </footer>
 
 <!--   <script src="js/jquery.inputmask.js"></script>-->
+
    <script src="js/menu.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 
@@ -1105,6 +1106,8 @@
    </script>
 
 <script>
+
+
   $(window).load(function() {
     // The slider being synced must be initialized first
     $('#carousel').flexslider({
@@ -1130,5 +1133,7 @@
     });
   });
 </script>
+<script src="js/bootstrap.min.js"></script>
+<script>  $('.dropdown-toggle').dropdown();</script>
 </body>
 </html>

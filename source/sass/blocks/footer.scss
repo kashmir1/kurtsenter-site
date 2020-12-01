@@ -141,6 +141,12 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #192b4e;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer__bottom-item {
@@ -153,6 +159,14 @@
     color: white;
     position: absolute;
     right: -20px;
+
+    @include media-breakpoint-up(md) {
+      right: -12px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      right: -20px;
+    }
   }
 }
 

@@ -12,7 +12,7 @@
   margin-bottom: 30px;
 
   @include media-breakpoint-up(md) {
-    width: 660px;
+    width: 620px;
     margin-right: 30px;
   }
 
@@ -60,7 +60,7 @@
     color: #03c787;
     position: absolute;
     left: 0;
-    top: -9px;
+    top: -2px;
     font-size: 24px;
   }
 }
@@ -73,7 +73,7 @@
     color: #cd0f2d;
     position: absolute;
     left: 0;
-    top: -9px;
+    top: -2px;
     font-size: 24px;
   }
 }
