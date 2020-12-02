@@ -180,6 +180,12 @@ h4 {
 
 .container {
   max-width: 1420px;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @include media-breakpoint-up(xl) {
     padding: 0;
     max-width: 1420px;
@@ -198,8 +204,16 @@ p {
   border: 1px solid #516388;
   padding-left: 20px;
   font-size: 18px;
+  padding-top: 20px;
 
   &::placeholder {
     color: #7e8fb0;
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    content: '';
+    border: 0;
   }
 }

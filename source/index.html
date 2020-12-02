@@ -8,14 +8,14 @@
   <meta name="description" content="Онлайн сервис проверки запрета на выезд из РФ">
   <meta name="Keywords" content="Онлайн сервис проверки запрета на выезд из РФ">
   <meta name="format-detection" content="telephone=no">
-<!--  <link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
-
-    <link rel="stylesheet" href="css/style.min.css">
+<!--    <link rel="stylesheet" href="css/style.min.css">-->
 </head>
 <!--Хедер-->
 <body>
@@ -29,53 +29,35 @@
       </div>
       <nav class="main-nav mr-xl-auto ml-xl-5">
         <div class="nav-list d-none d-xl-flex align-items-md-center">
-          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Выбрать курорт +</a>
-            <ul class="subnav d-none">
-              <li class="subnav-item">
-                <a href="">
-                  <span class="text-danger">Кавказские Минеральные Воды</span></a>
-              </li>
-              <li>
-                <a href="">
-                  Кисловодск</a>
-              </li>
-              <li>
-                <a href="">
-                  Ессентуки</a>
-              </li>
-              <li>
-                <a href="">
-                  Пятигорск</a>
-              </li>
-              <li>
-                <a href="">
-                  Железноводск</a>
-              </li>
-            </ul>
+          <div class="nav-item btn-group">
+            <button type="button" class="nav-link nav-item-drop dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выбрать курорт +</button>
+            <div class="dropdown-menu">
+              <a class="subnav-item dropdown-item" href="">
+                <span class="text-danger">Кавказские Минеральные Воды</span></a>
+              <a class="dropdown-item" href="">
+                Кисловодск</a>
+              <a class="dropdown-item" href="">
+                Ессентуки</a>
+              <a class="dropdown-item" href="">
+                Пятигорск</a>
+              <a class="dropdown-item" href="">
+                Железноводск</a>
+            </div>
           </div>
-          <div class="nav-item"><a class="nav-link nav-item-drop" href="">Акции +</a>
-            <ul class="subnav d-none">
-              <li class="subnav-item">
-                <a href="">
-                  <span class="text-danger">Акции</span></a>
-              </li>
-              <li>
-                <a href="">
-                  Кисловодск</a>
-              </li>
-              <li>
-                <a href="">
-                  Ессентуки</a>
-              </li>
-              <li>
-                <a href="">
-                  Пятигорск</a>
-              </li>
-              <li>
-                <a href="">
-                  Железноводск</a>
-              </li>
-            </ul>
+          <div class="nav-item btn-group">
+            <button type="button" class="nav-link nav-item-drop dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Акции +</button>
+            <div class="dropdown-menu">
+              <a class="subnav-item dropdown-item" href="">
+                <span class="text-danger">Кавказские Минеральные Воды</span></a>
+              <a class="dropdown-item" href="">
+                Кисловодск</a>
+              <a class="dropdown-item" href="">
+                Ессентуки</a>
+              <a class="dropdown-item" href="">
+                Пятигорск</a>
+              <a class="dropdown-item" href="">
+                Железноводск</a>
+            </div>
           </div>
           <div class="nav-item"><a class="nav-link" href="">Подобрать отель по услугам</a></div>
           <div class="nav-item"><a class="nav-link" href="">Оплатить</a></div>
@@ -123,6 +105,7 @@
       <div class="resort-choose__list">
         <div class="resort-choose__item resort-choose__item--kmv">
           <div class="resort-choose__title">
+
             <h3>Кавказские
               Минеральные воды
             </h3>
@@ -375,8 +358,8 @@
         <div class="d-flex flex-column flex-xl-row align-items-xl-center mt-xl-3">
           <div class="w-100 mr-xl-3">
             <div class="d-xl-flex justify-content-xl-between">
-              <input type="text" class="about-call-me mt-3 w-100" placeholder="ФИО">
-              <input type="text" class="about-call-me mt-3 w-100" placeholder="Телефон">
+              <input type="text" class="about-call-me mt-3 w-100 mr-md-2" placeholder="ФИО">
+              <input type="text" class="about-call-me mt-3 w-100 mr-md-2" placeholder="Телефон">
               <input type="text" class="about-call-me mt-3 mr-xl-0 w-100" placeholder="E-mail">
             </div>
             <textarea name="" id="" class="input-textares mt-3"></textarea>
@@ -829,6 +812,7 @@
        $( "#arrival3, #departure3" ).datepicker( "setDate", new Date());
      });
    </script>
-
+<script src="js/bootstrap.min.js"></script>
+<script>  $('.dropdown-toggle').dropdown();</script>
 </body>
 </html>

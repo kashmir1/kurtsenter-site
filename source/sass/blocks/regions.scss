@@ -3,7 +3,7 @@
 }
 
 .regions__list {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -18,9 +18,9 @@
   margin-bottom: 30px;
   overflow: hidden;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     height: 260px;
-    width: 665px;
+    width: 610px;
     margin-right: 60px;
 
     &:nth-of-type(even) {
