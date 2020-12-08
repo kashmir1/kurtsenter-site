@@ -9281,6 +9281,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 15px;
   position: relative;
   margin-right: 20px; }
+  @media (min-width: 1190px) {
+    .footer__bottom-item {
+      font-size: 12px; } }
   .footer__bottom-item::after {
     content: '|';
     color: white;
@@ -10074,7 +10077,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 30px; }
   @media (min-width: 1190px) {
     .reviews__review {
-      width: 620px;
+      width: 45%;
       margin-right: 30px; } }
   @media (min-width: 1480px) {
     .reviews__review {
@@ -10390,6 +10393,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   @media (min-width: 1190px) {
     .regions__item {
       height: 260px;
+      width: 47%;
       margin-right: 60px; }
       .regions__item:nth-of-type(even) {
         margin-right: 0; } }
@@ -10480,7 +10484,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 20px; }
   @media (min-width: 1190px) {
     .popular__item {
-      width: 200px;
+      width: 15%;
       margin-right: 20px; }
       .popular__item:nth-of-type(6n) {
         margin-right: 0; } }

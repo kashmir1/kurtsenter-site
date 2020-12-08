@@ -21,6 +21,7 @@
   @include media-breakpoint-up(md) {
     height: 260px;
     //width: 50px;
+    width: 47%;
     margin-right: 60px;
 
     &:nth-of-type(even) {

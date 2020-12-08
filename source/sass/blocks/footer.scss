@@ -154,6 +154,10 @@
   position: relative;
   margin-right: 20px;
 
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+  }
+
   &::after {
     content: '|';
     color: white;
