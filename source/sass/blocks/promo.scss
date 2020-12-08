@@ -8,10 +8,6 @@
     height: 650px;
   }
 
-  @include media-breakpoint-up(xl) {
-    height: 950px;
-  }
-
   &::before {
     content: '';
     position: absolute;
@@ -25,9 +21,6 @@
       height: 650px;
     }
 
-    @include media-breakpoint-up(xl) {
-      height: 950px;
-    }
   }
 }
 

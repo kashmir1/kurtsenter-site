@@ -9324,18 +9324,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (min-width: 1190px) {
   .about__content {
+    margin-left: 20px; } }
+
+@media (min-width: 1480px) {
+  .about__content {
     margin-left: 100px; } }
 
 #slider {
   margin-bottom: 10px; }
-  #slider .flex-viewport {
-    height: 300px; }
-    @media (min-width: 1190px) {
-      #slider .flex-viewport {
-        height: 100%;
-        width: 625px; } }
-    #slider .flex-viewport img {
-      width: 100%; }
+  @media (min-width: 1190px) {
+    #slider .flex-viewport {
+      height: 100%;
+      width: 625px; } }
+  #slider .flex-viewport img {
+    width: 100%; }
   #slider .flex-direction-nav {
     position: relative;
     display: -webkit-box;
@@ -9385,9 +9387,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   @media (min-width: 1190px) {
     .promo {
       height: 650px; } }
-  @media (min-width: 1480px) {
-    .promo {
-      height: 950px; } }
   .promo::before {
     content: '';
     position: absolute;
@@ -9399,9 +9398,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     @media (min-width: 1190px) {
       .promo::before {
         height: 650px; } }
-    @media (min-width: 1480px) {
-      .promo::before {
-        height: 950px; } }
 
 .promo__small {
   position: relative;
@@ -9522,13 +9518,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   @media (min-width: 1480px) {
     .calc-form-title {
       font-size: 40px; } }
+  @media (min-width: 1480px) {
+    .calc-form-title {
+      font-size: 40px; } }
 
 .calc-form-select-title {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
   color: #687693;
-  padding-left: 30px; }
+  padding-left: 30px;
+  white-space: nowrap; }
   @media (min-width: 1190px) {
     .calc-form-select-title {
       font-size: 16px; } }
@@ -9563,7 +9563,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .calc-form-input {
   border: 0;
   height: 50px;
-  font-size: 30px;
+  font-size: 20px;
   color: #283a5e;
   font-weight: bold;
   background: url("../img/drop.svg") no-repeat;
