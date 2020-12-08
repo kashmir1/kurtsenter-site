@@ -9470,7 +9470,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #ffffff; }
   @media (min-width: 1190px) {
     .promo-title {
-      font-size: 95px; } }
+      font-size: 60px; } }
+  @media (min-width: 1480px) {
+    .promo-title {
+      font-size: 80px; } }
 
 .promo__subtitle {
   font-size: 30px;
@@ -9481,13 +9484,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .promo-desc {
   color: #ffffff;
   font-size: 25px;
-  display: inline-block;
-  margin-top: 45px; }
+  display: inline-block; }
 
 .promo-button {
   width: 100%;
   height: 70px;
-  margin-top: 60px; }
+  margin-top: 30px; }
   @media (min-width: 1190px) {
     .promo-button {
       width: 250px; } }
@@ -9496,7 +9498,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 17px 4px rgba(85, 85, 85, 0.1);
           box-shadow: 0px 0px 17px 4px rgba(85, 85, 85, 0.1);
-  margin-top: -80px;
+  margin-top: -120px;
   z-index: 1000;
   position: relative;
   padding: 20px; }
@@ -9527,6 +9529,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
   color: #687693;
   padding-left: 30px; }
+  @media (min-width: 1190px) {
+    .calc-form-select-title {
+      font-size: 16px; } }
+  @media (min-width: 1480px) {
+    .calc-form-select-title {
+      font-size: 20px; } }
 
 .calc-form-select-title--date {
   position: relative; }
@@ -9630,7 +9638,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 20px; }
   @media (min-width: 1190px) {
     .rooms-item {
-      width: 310px;
+      width: 24%;
       margin-right: 10px; }
       .rooms-item:nth-of-type(4n) {
         margin-right: 0; } }
@@ -9722,7 +9730,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .services-list__item {
       margin-bottom: 30px;
       font-size: 19px;
-      width: 300px;
       margin-right: 30px; } }
   @media (min-width: 1480px) {
     .services-list__item {
@@ -10383,7 +10390,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   @media (min-width: 1190px) {
     .regions__item {
       height: 260px;
-      width: 610px;
       margin-right: 60px; }
       .regions__item:nth-of-type(even) {
         margin-right: 0; } }
@@ -10520,7 +10526,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 30px; }
   @media (min-width: 1190px) {
     .resort-choose__item {
-      width: 350px;
+      width: 35%;
       margin-right: 30px; }
       .resort-choose__item:nth-of-type(4n) {
         margin-right: 0; } }
@@ -10539,7 +10545,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (min-width: 1190px) {
   .resort__item--big {
-    width: 437px;
+    width: 40%;
     margin-right: 30px; }
     .resort__item--big:nth-of-type(3n) {
       margin-right: 0; } }
