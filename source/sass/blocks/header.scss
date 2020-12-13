@@ -30,8 +30,8 @@
   }
 
   @include media-breakpoint-up(xl) {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -158,10 +158,10 @@
     height: 30px;
   }
 
-  @include media-breakpoint-up(xl) {
-    width: 50px;
-    height: 50px;
-  }
+  //@include media-breakpoint-up(xl) {
+  //  width: 50px;
+  //  height: 50px;
+  //}
 }
 
 .header__user-link--user {
@@ -183,11 +183,11 @@
       left: 6px;
     }
 
-    @include media-breakpoint-up(xl) {
-      width: 25px;
-      height: 25px;
-      left: 14px;
-    }
+    //@include media-breakpoint-up(xl) {
+    //  width: 25px;
+    //  height: 25px;
+    //  left: 14px;
+    //}
   }
 }
 
@@ -210,11 +210,11 @@
       left: 5px;
     }
 
-    @include media-breakpoint-up(xl) {
-      width: 25px;
-      height: 25px;
-      left: 14px;
-    }
+    //@include media-breakpoint-up(xl) {
+    //  width: 25px;
+    //  height: 25px;
+    //  left: 14px;
+    //}
   }
 }
 
@@ -237,11 +237,11 @@
       left: 5px;
     }
 
-    @include media-breakpoint-up(xl) {
-      width: 25px;
-      height: 25px;
-      left: 11px;
-    }
+    //@include media-breakpoint-up(xl) {
+    //  width: 25px;
+    //  height: 25px;
+    //  left: 11px;
+    //}
   }
 }
 

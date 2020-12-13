@@ -148,7 +148,8 @@ h4 {
 
   @include media-breakpoint-up(lg) {
     font-size: 20px;
-    padding-right: 110px;
+    padding-right: 90px;
+    white-space: nowrap;
   }
 
   &:hover {
