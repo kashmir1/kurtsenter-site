@@ -1,1 +1,1 @@
-ZAPRETVIEZDA
+Курцентр
