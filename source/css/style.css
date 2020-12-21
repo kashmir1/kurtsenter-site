@@ -6281,8 +6281,10 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     right: 10px; } }
 
-#slider .flex-direction-nav {
-  display: none; }
+#slider {
+  margin-bottom: 10px; }
+  #slider .flex-direction-nav {
+    display: none; }
 
 /*
  * jQuery FlexSlider v2.7.2
@@ -9642,6 +9644,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
