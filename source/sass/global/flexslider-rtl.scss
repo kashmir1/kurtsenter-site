@@ -30,22 +30,29 @@
 .carousel li {
   margin-right: 5px;
 }
+
+
 .flex-direction-nav {
   *height: 0;
 }
 
 .flex-direction-nav a:before {
   content: '\f002';
+  font-size: 20px;
+
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f001';
+  font-size: 20px;
 }
 .flex-direction-nav .flex-prev {
   left: auto; right: -50px;
+  top: 40px;
 }
 .flex-direction-nav .flex-next {
   right: auto; left: -50px;
   text-align: left;
+  top: 40px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;

@@ -6011,6 +6011,13 @@ p {
   src: url("../fonts/Golos Text_Medium.woff2");
   src: url("../fonts/Golos Text_Medium.woff"); }
 
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url("../fonts/flexslider-icon.eot");
+  src: url("../fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("../fonts/flexslider-icon.woff") format("woff"), url("../fonts/flexslider-icon.ttf") format("truetype"), url("../fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*
  * jQuery FlexSlider v2.7.2
  * https://www.woocommerce.com/flexslider/
@@ -6150,7 +6157,8 @@ html[xmlns] .flexslider .slides {
   content: '\f002'; }
 
 .flex-direction-nav .flex-prev {
-  left: -50px; }
+  left: -50px;
+  margin: -20px -30px 0; }
 
 .flex-direction-nav .flex-next {
   right: -50px;
@@ -6273,6 +6281,9 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     right: 10px; } }
 
+#slider .flex-direction-nav {
+  display: none; }
+
 /*
  * jQuery FlexSlider v2.7.2
  * https://www.woocommerce.com/flexslider/
@@ -6306,19 +6317,23 @@ html[xmlns] .flexslider .slides {
   *height: 0; }
 
 .flex-direction-nav a:before {
-  content: '\f002'; }
+  content: '\f002';
+  font-size: 20px; }
 
 .flex-direction-nav a.flex-next:before {
-  content: '\f001'; }
+  content: '\f001';
+  font-size: 20px; }
 
 .flex-direction-nav .flex-prev {
   left: auto;
-  right: -50px; }
+  right: -50px;
+  top: 40px; }
 
 .flex-direction-nav .flex-next {
   right: auto;
   left: -50px;
-  text-align: left; }
+  text-align: left;
+  top: 40px; }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
@@ -9292,21 +9307,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: -ms-flexbox;
     display: flex; } }
 
-#carousel li {
-  height: 60px;
-  margin-bottom: 20px; }
-  #carousel li img {
-    width: 60px;
-    border: 1px solid #0a90c4; }
-
-#carousel .flex-direction-nav {
-  display: none; }
-
-#carousel .slides {
-  margin: 0;
-  max-width: 625px;
-  padding-left: 0; }
-
 @media (min-width: 1190px) {
   .about__content {
     margin-left: 20px; } }
@@ -9317,28 +9317,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .flexslider {
   direction: inherit; }
-
-#slider {
-  margin-bottom: 10px; }
-  @media (min-width: 1190px) {
-    #slider .flex-viewport {
-      height: 100%;
-      width: 625px; } }
-  #slider .flex-viewport img {
-    width: 100%; }
-  #slider .flex-direction-nav {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none; }
-    #slider .flex-direction-nav .flex-nav-prev {
-      display: none; }
-    #slider .flex-direction-nav .flex-nav-next {
-      display: none; }
-  #slider .flex-direction-nav {
-    margin-top: 10px;
-    max-width: 625px; }
 
 .about-content {
   font-size: 14px;
